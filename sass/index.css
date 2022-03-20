@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Nunito:ital,wght@0,400;0,700;0,800;1,400&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header__orange-ball {
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 576px) {
+  .header__orange-ball {
+    top: -183.5px;
+    left: 197.5px;
+    width: 296.5px;
+    height: 296.5px;
+  }
+}
+@media (max-width: 1200px) {
+  .header__orange-ball {
+    top: -70px;
+  }
+}
+
+.top-section {
+  background-color: #13C1D4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding-left: 575px;
+  padding-right: 571.46px;
+  padding-top: 311.5px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+@media (max-width: 576px) {
+  .top-section {
+    width: 360px;
+    padding-left: 4.5px;
+    height: 893px;
+  }
+}
+
+.top-section__logo {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 295px;
+  top: 98px;
+}
+@media (max-width: 576px) {
+  .top-section__logo {
+    width: 136.54px;
+    height: 55px;
+    top: 36px;
+  }
+}
+
+.top-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media (max-width: 576px) {
+  .top-block {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 125.5px;
+    padding-bottom: 266px;
+  }
+}
+@media (max-width: 1400px) {
+  .top-block {
+    padding-left: 375px;
+    padding-right: 375px;
+  }
+}
+@media (max-width: 1200px) {
+  .top-block {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
+}
+
+.top-block__title {
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 65.47px;
+  text-align: center;
+  width: 770px;
+  margin-bottom: 53px;
+}
+@media (max-width: 576px) {
+  .top-block__title {
+    width: 255px;
+    font-size: 28px;
+    line-height: 38.19px;
+    margin-top: 125.5px;
+    margin-bottom: 34px;
+  }
+}
+@media (max-width: 1200px) {
+  .top-block__title {
+    font-size: 40px;
+  }
+}
+
+.top-block__text {
+  font-family: "Nunito", sans-serif;
+  width: 770px;
+  font-weight: 400;
+  line-height: 24.55px;
+  font-size: 18px;
+  color: #3C4A53;
+  text-align: center;
+  margin-bottom: 45.5px;
+}
+@media (max-width: 576px) {
+  .top-block__text {
+    width: 256px;
+    line-height: 19.1px;
+    font-size: 14px;
+    text-align: center;
+  }
+}
+
+.top_buttons {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .top_buttons {
+    justify-content: center;
+  }
+}
+
+.orange-button {
+  width: 270px;
+  height: 70px;
+  border-radius: 20px;
+  background: #FF6D1B;
+  border: #FF6D1B;
+  margin-right: 33.54px;
+}
+@media (max-width: 576px) {
+  .orange-button {
+    width: 240px;
+    height: 58.5px;
+    border-radius: 12px;
+    padding-left: 15px;
+    margin-bottom: 21.25px;
+  }
+}
+@media (max-width: 1400px) {
+  .orange-button {
+    width: 230px;
+  }
+}
+.orange-button:hover, .orange-button:active {
+  background: #CC3013;
+  border-color: #CC3013;
+}
+
+.orange-button__text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 28.42px;
+  color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  .orange-button__text {
+    font-size: 14px;
+    line-height: 22.11px;
+    text-align: center;
+  }
+}
+@media (max-width: 1400px) {
+  .orange-button__text {
+    font-size: 16px;
+  }
+}
+
+.tranparent-button {
+  width: 470px;
+  height: 70px;
+  border-radius: 20px;
+  border: solid 2px #FFFFFF;
+  background: #13C1D4;
+}
+@media (max-width: 576px) {
+  .tranparent-button {
+    width: 238.5px;
+    height: 76.25px;
+    border-radius: 12px;
+  }
+}
+@media (max-width: 1400px) {
+  .tranparent-button {
+    width: 400px;
+  }
+}
+.tranparent-button:hover, .tranparent-button:active {
+  background: #155783;
+  border-color: #155783;
+}
+
+.tranparent-button__text {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24.55px;
+  color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  .tranparent-button__text {
+    font-size: 14px;
+    line-height: 19.1px;
+    text-align: center;
+  }
+}
+@media (max-width: 1400px) {
+  .tranparent-button__text {
+    font-size: 16px;
+  }
+}
+
+.top-section__blue-ball {
+  position: absolute;
+  left: 0px;
+  top: 342.5px;
+  z-index: 100;
+}
+@media (max-width: 576px) {
+  .top-section__blue-ball {
+    height: 151.54px;
+    width: 151.54px;
+    left: -41.54px;
+    top: 214.7px;
+  }
+}
+@media (max-width: 1400px) {
+  .top-section__blue-ball {
+    left: -80px;
+  }
+}
+
+.top-section__vacuum-man {
+  width: 609px;
+  height: 568.5px;
+  position: absolute;
+  left: 132px;
+  top: 342.5px;
+}
+@media (max-width: 576px) {
+  .top-section__vacuum-man {
+    height: 318.44px;
+    width: 333.28px;
+    left: 4.23px;
+    top: 635.25px;
+  }
+}
+@media (max-width: 1400px) {
+  .top-section__vacuum-man {
+    left: 63.23px;
+    top: 342.25px;
+    width: 450px;
+  }
+}
+@media (max-width: 1200px) {
+  .top-section__vacuum-man {
+    width: 350px;
+  }
+}/*# sourceMappingURL=index.css.map */
