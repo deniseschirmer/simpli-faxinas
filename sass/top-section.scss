@@ -5,270 +5,239 @@
       @content;  
     }
 }
-.header__orange-ball {
-    position: absolute;
-    right: 0;
-    // right: -1145px;
-
-    @include media-max-width($breakpoint-small){
-        top: -183.5px;
-        left: 197.5px;
-        width: 296.5px;
-        height: 296.5px;
-    }
-    @include media-max-width($breakpoint-x-large){
-        top: -70px;
-     }
-}
-
 
 .top-section {
     background-color: map-get($colors , blue-turquoise);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
     width: 100%;
-    // height: 851px;
-    padding-left: 575px;
-    padding-right: 571.46px;
-    padding-top: 311.5px;
-    padding-bottom: 140px;
+    padding-left: 36rem;
+    padding-right: 36rem;
+    padding-top: 19.5rem;
+    padding-bottom: 8.5rem;
     box-sizing: border-box;
-
-    @include media-max-width($breakpoint-small){
-        width: 360px;
-        // padding-right: 22.5px;
-        padding-left: 4.5px;
-        height: 893px;
-    }
-}
- 
-.top-section__logo {
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 295px;
-    top: 98px;   
-
-    @include media-max-width($breakpoint-small){
-        width: 136.54px;
-        height: 55px;
-        top: 36px;
-    }
-}
-
-.top-block {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    // padding-left: 575px;
-    // padding-right: 571.46px;
-    // padding-top: 311.5px;
-    // padding-bottom: 140px;
-
-    @include media-max-width($breakpoint-small){
-       padding-left: 45px;
-       padding-right: 45px;
-       padding-top: 125.5px;
-       padding-bottom: 266px;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-       padding-left: 375px;
-       padding-right: 375px;
-    //    padding-top: 300px;
-    }
-    @include media-max-width($breakpoint-x-large){
-       padding-left: 300px;
-       padding-right: 300px;
-     }
-    
-}
-
-.top-block__title {
-    font-family: $font-nunito;
-    color: map-get($colors , white);
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 65.47px;
     text-align: center;
-    width: 770px;
-    margin-bottom: 53px;
-    // margin-top: 311px;
 
-    @include media-max-width($breakpoint-small){
-        width: 255px;
-        // height: 228px;
-        font-size: 28px;
-        line-height: 38.19px;
-        margin-top: 125.5px;
-        margin-bottom: 34px;
+    @include media-max-width($breakpoint-x-x-x-large){
+        padding-left: 21.5rem;
+        padding-right: 21.5rem; 
     }
-    @include media-max-width($breakpoint-x-large){
-       font-size: 40px;
+
+    @include media-max-width($breakpoint-x-x-large){
+        padding-left: 15.5rem;
+        padding-right: 15.5rem; 
     }
-}
-
-.top-block__text {
-    font-family: $font-nunito;
-    width: 770px;
-    font-weight: 400;
-    line-height: 24.55px;
-    font-size: 18px;
-    color:  map-get($colors, dark-gray);
-    text-align: center ; 
-    margin-bottom: 45.5px;
-   
-
-    @include media-max-width($breakpoint-small){
-        width: 256px;
-        line-height: 19.1px;
-        font-size: 14px;
-        text-align: center;
-        // padding-right: 52px;
-        // padding-left: 52px;
+      @include media-max-width($breakpoint-x-large){
+        padding-left: 13rem;
+        padding-right: 13rem; 
     }
-}
-
-.top_buttons{
-    // background-color: map-get($colors , blue-turquoise);
-    display: flex;
-    // flex-wrap: wrap;
-
-    @include media-max-width($breakpoint-small){
-        // padding-left: 45px;
-        // padding-right: 45px;
-        // padding-top: 45.5px;  
-        // padding-bottom: 8.5px;
+      @include media-max-width($breakpoint-large){
+        padding-left: 7rem;
+        padding-right: 7rem; 
     }
-    @include media-max-width($breakpoint-x-large){
+
+    @include media-max-width($breakpoint-medium){
+        padding-left: 5.5rem;
+        padding-right: 5.5rem; 
+        padding-top: 14.5rem; 
+    }
+      @include media-max-width($breakpoint-small){
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        padding-top: 8rem; 
         justify-content: center;
-     }
+    }
+
+    .top-block{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        position: relative;
+        z-index: 100;
+
+        &__title {
+            font-family: $font-nunito;
+            color: map-get($colors , white);
+            font-weight: 800;
+            font-size: 3rem;
+            line-height: 4rem;
+            margin-bottom: 3.5rem;
+        
+            @include media-max-width($breakpoint-x-large){
+                font-size: 2.5rem;
+            }
+        
+            @include media-max-width($breakpoint-small){
+                font-size: 1.7rem;
+                line-height: 2.4rem;
+                margin-bottom: 2rem;
+            }
+        }
+        
+        &__text {
+            font-family: $font-nunito;
+            font-weight: 400;
+            line-height: 1.5rem;
+            font-size: 1.1rem;
+            color:  map-get($colors, dark-gray);
+            text-align: center; 
+            margin-bottom: 2.85rem;
+        
+            @include media-max-width($breakpoint-x-x-large){
+                font-size: 1rem;
+            }
+            @include media-max-width($breakpoint-small){
+                font-size: 0.9rem;
+                line-height: 1.4rem;
+                text-align: center;
+            }
+        }
+        
+        .top_buttons{
+            display: flex;
+            justify-content: space-around;
+        
+            
+            @include media-max-width($breakpoint-large){
+                flex-wrap: wrap;
+            }
+        
+            @include media-max-width($breakpoint-medium){
+                justify-content: center;
+            }
+
+            .orange-button {
+                width: 16.9rem;
+                height: 4.4rem;
+                border-radius: 1.25rem;
+                background: map-get($colors , orange);
+                border: map-get($colors, orange );
+                margin-right: 2rem;
+            
+                @include media-max-width($breakpoint-large){
+                    margin-right: 0;
+                    margin-bottom: 1.35rem;
+                    width: 25rem;
+                }
+            
+                @include media-max-width($breakpoint-medium){
+                    padding-left: 0.95rem;
+                }
+            
+                @include media-max-width($breakpoint-small){
+                    width: 15rem;
+                }
+                
+                &:hover,
+                &:active {
+                 background: map-get($colors, dark-orange );
+                 border-color: map-get($colors, dark-orange );
+                }
+
+                &__text{
+                    font-family: $font-nunito;
+                    font-weight: 900;
+                    font-size: 1.15rem;
+                    line-height: 1.8rem;
+                    color: map-get($colors , white );
+                
+                    @include media-max-width($breakpoint-x-x-large){
+                        font-size: 1rem;
+                    }
+                
+                    @include media-max-width($breakpoint-small){
+                        font-size: 0.9rem;
+                        line-height: 1.4rem;
+                        text-align: center;
+                    }
+                }
+            }
+            
+            .tranparent-button {
+                width: 29.4rem;
+                height: 4.4rem;
+                border-radius: 1.25rem;
+                border: solid 2px map-get($colors, white );
+                background:  map-get($colors, blue-turquoise );
+            
+                @include media-max-width($breakpoint-x-large){
+                    width: 25rem;
+                }
+            
+                @include media-max-width($breakpoint-small){
+                    width: 15rem;
+                    height: 4.8rem;
+                }
+            
+                &:hover,
+                &:active {
+                 background: map-get($colors, blue );
+                 border-color: map-get($colors, blue );
+                }
+
+                
+                &__text{
+                    font-family: $font-nunito;
+                    font-weight: 800;
+                    font-size: 1.15rem;
+                    line-height: 1.5rem;
+                    color: map-get($colors , white );
+            
+                @include media-max-width($breakpoint-x-x-large){
+                    font-size: 1rem;
+                }
+                
+                @include media-max-width($breakpoint-small){
+                    font-size: 0.9rem;
+                    line-height: 1.2rem;
+                    text-align: center;
+                } 
+            }
+        }
+    }
+}
+        
+
+    &__blue-ball {
+        position: absolute;
+        left: 0;
+        top: 21.4rem;
     
-}
-.orange-button {
-    width: 270px;
-    height: 70px;
-    border-radius: 20px;
-    background: map-get($colors , orange);
-    border: map-get($colors, orange );
-    // margin-top: 56.5px;
-    margin-right: 33.54px;
-
-    @include media-max-width($breakpoint-small){
-        width: 240px;
-        height: 58.5px;
-        border-radius: 12px;
-        padding-left: 15px;
-        margin-bottom: 21.25px;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-       width: 230px;
-     }
+        @include media-max-width($breakpoint-medium){
+            height: 16.5rem;
+            width: 11.5rem;
+            left: -2.6rem;
+            top: 13.4rem;
+        }
     
-    &:hover,
-    &:active {
-     background: map-get($colors, dark-orange );
-     border-color: map-get($colors, dark-orange );
-    }
-}
-
-.orange-button__text{
-    font-family: $font-nunito;
-    font-weight: 900;
-    font-size: 18px;
-    line-height: 28.42px;
-    color: map-get($colors , white );
-
-    @include media-max-width($breakpoint-small){
-        font-size: 14px;
-        line-height: 22.11px;
-        text-align: center;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-        font-size: 16px;
+        @include media-max-width($breakpoint-small){
+            height: 9.5rem;
+            width: 9.5rem;
+            left: -2.6rem;
+            top: 13.4rem;
+        }
       }
-}
-
-.tranparent-button {
-    width: 470px;
-    height: 70px;
-    border-radius: 20px;
-    border: solid 2px map-get($colors, white );
-    background:  map-get($colors, blue-turquoise );
-    // margin-top: 56.5px;
-
-    @include media-max-width($breakpoint-small){
-        width: 238.50px;
-        height: 76.25px;
-        border-radius: 12px;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-        width: 400px;
-      }
-
-    &:hover,
-    &:active {
-     background: map-get($colors, blue );
-     border-color: map-get($colors, blue );
-    }
-}
-
-.tranparent-button__text{
-    font-family: $font-nunito;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 24.55px;
-    color: map-get($colors , white );
-
     
-    @include media-max-width($breakpoint-small){
-        font-size: 14px;
-        line-height: 19.1px;
-        text-align: center;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-        font-size: 16px;
-      }
+    &__vacuum-man {
+        width: 38rem;
+        height: 35.5rem;
+        position: absolute;
+        left: 8.3rem;
+        top: 21.4rem;
+    
+        @include media-max-width($breakpoint-x-x-large){
+            left: 4rem;
+        }
+       
+        @include media-max-width($breakpoint-small){
+            height: 20rem;
+            width: 20.85rem;
+            left: 0.3rem;
+            top: 39.7rem;
+        }
+
+        @include media-max-width($breakpoint-x-small){
+            top: 47.7rem;
+        }
+    }  
 }
 
-.top-section__blue-ball {
-    position: absolute;
-    left: 0px;
-    top: 342.5px;
-    z-index: 100;
 
-    @include media-max-width($breakpoint-small){
-        height: 151.54px;
-        width: 151.54px;
-        left: -41.54px;
-        top: 214.70px;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-        left: -80px;
-    }
-}
-
-.top-section__vacuum-man {
-    width: 609px;
-    height: 568.5px;
-    position: absolute;
-    left: 132px;
-    top: 342.5px;
-
-    @include media-max-width($breakpoint-small){
-        height: 318.44px;
-        width: 333.28px;
-        left: 4.23px;
-        top: 635.25px;
-    }
-    @include media-max-width($breakpoint-x-x-large){
-        left: 63.23px;
-        top: 342.25px;
-        width: 450px;
-    }
-    @include media-max-width($breakpoint-x-large){
-        width: 350px;
-     }
-}
