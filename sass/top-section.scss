@@ -1,243 +1,299 @@
 @import "_variables.scss";
 
 @mixin media-max-width($width) {
-    @media (max-width: $width){
-      @content;  
-    }
+	@media (max-width: $width){
+	  @content;  
+	}
 }
 
 .top-section {
-    background-color: map-get($colors , blue-turquoise);
-    width: 100%;
-    padding-left: 36rem;
-    padding-right: 36rem;
-    padding-top: 19.5rem;
-    padding-bottom: 8.5rem;
-    box-sizing: border-box;
-    text-align: center;
+	background-color: map-get($colors , blue-turquoise);
+	width: 100%;
+	padding-left: 36rem;
+	padding-right: 36rem;
+	padding-top: 19.5rem;
+	padding-bottom: 8.5rem;
+	box-sizing: border-box;
+	text-align: center;
+
+	@include media-max-width($breakpoint-x-x-x-large){
+		padding-left: 21.5rem;
+		padding-right: 21.5rem; 
+	}
+
+	@include media-max-width($breakpoint-x-x-large){
+		padding-left: 15.5rem;
+		padding-right: 15.5rem; 
+	}
+
+  @include media-max-width($breakpoint-x-large){
+    padding-left: 13rem;
+    padding-right: 13rem; 
+	}
+
+	@include media-max-width($breakpoint-large){
+		padding-left: 7rem;
+		padding-right: 7rem; 
+	}
+
+	@include media-max-width($breakpoint-medium){
+		padding-left: 5.5rem;
+		padding-right: 5.5rem; 
+		padding-top: 14.5rem; 
+	}
+
+	@include media-max-width($breakpoint-small){
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+		padding-top: 8rem; 
+		justify-content: center;
+	}
+
+  &__orange-ball {
+    border: solid 1px map-get($colors, orange-ball );
+    background: map-get($colors, orange-ball);
+    border-radius: 50%;
+    width: 30.9rem;
+    height: 30.9rem;
+    position: fixed;
+    top: -11.5rem;
+    right: -8.7rem;
 
     @include media-max-width($breakpoint-x-x-x-large){
-        padding-left: 21.5rem;
-        padding-right: 21.5rem; 
+      top: -10rem;
+      height: 30rem;
+      width: 30rem;
     }
 
-    @include media-max-width($breakpoint-x-x-large){
-        padding-left: 15.5rem;
-        padding-right: 15.5rem; 
-    }
-      @include media-max-width($breakpoint-x-large){
-        padding-left: 13rem;
-        padding-right: 13rem; 
-    }
-      @include media-max-width($breakpoint-large){
-        padding-left: 7rem;
-        padding-right: 7rem; 
+    @include media-max-width($breakpoint-x-large){
+      top: -10rem;
+      right: -170px;
     }
 
     @include media-max-width($breakpoint-medium){
-        padding-left: 5.5rem;
-        padding-right: 5.5rem; 
-        padding-top: 14.5rem; 
+      top: -4rem;
+      height: 18.5rem;
+      width: 18.5rem;
+      right: -3.15rem;
     }
-      @include media-max-width($breakpoint-small){
-        padding-left: 3.5rem;
-        padding-right: 3.5rem;
-        padding-top: 8rem; 
-        justify-content: center;
+    
+    @include media-max-width($breakpoint-small){
+      top: -4rem;
+      height: 12.5rem;
+      width: 12.5rem;
     }
 
-    .top-block{
-        display: flex;
-        flex-direction: column;
-        box-sizing: border-box;
-        position: relative;
-        z-index: 100;
-
-        &__title {
-            font-family: $font-nunito;
-            color: map-get($colors , white);
-            font-weight: 800;
-            font-size: 3rem;
-            line-height: 4rem;
-            margin-bottom: 3.5rem;
-        
-            @include media-max-width($breakpoint-x-large){
-                font-size: 2.5rem;
-            }
-        
-            @include media-max-width($breakpoint-small){
-                font-size: 1.7rem;
-                line-height: 2.4rem;
-                margin-bottom: 2rem;
-            }
-        }
-        
-        &__text {
-            font-family: $font-nunito;
-            font-weight: 400;
-            line-height: 1.5rem;
-            font-size: 1.1rem;
-            color:  map-get($colors, dark-gray);
-            text-align: center; 
-            margin-bottom: 2.85rem;
-        
-            @include media-max-width($breakpoint-x-x-large){
-                font-size: 1rem;
-            }
-            @include media-max-width($breakpoint-small){
-                font-size: 0.9rem;
-                line-height: 1.4rem;
-                text-align: center;
-            }
-        }
-        
-        .top_buttons{
-            display: flex;
-            justify-content: space-around;
-        
-            
-            @include media-max-width($breakpoint-large){
-                flex-wrap: wrap;
-            }
-        
-            @include media-max-width($breakpoint-medium){
-                justify-content: center;
-            }
-
-            .orange-button {
-                width: 16.9rem;
-                height: 4.4rem;
-                border-radius: 1.25rem;
-                background: map-get($colors , orange);
-                border: map-get($colors, orange );
-                margin-right: 2rem;
-            
-                @include media-max-width($breakpoint-large){
-                    margin-right: 0;
-                    margin-bottom: 1.35rem;
-                    width: 25rem;
-                }
-            
-                @include media-max-width($breakpoint-medium){
-                    padding-left: 0.95rem;
-                }
-            
-                @include media-max-width($breakpoint-small){
-                    width: 15rem;
-                }
-                
-                &:hover,
-                &:active {
-                 background: map-get($colors, dark-orange );
-                 border-color: map-get($colors, dark-orange );
-                }
-
-                &__text{
-                    font-family: $font-nunito;
-                    font-weight: 900;
-                    font-size: 1.15rem;
-                    line-height: 1.8rem;
-                    color: map-get($colors , white );
-                
-                    @include media-max-width($breakpoint-x-x-large){
-                        font-size: 1rem;
-                    }
-                
-                    @include media-max-width($breakpoint-small){
-                        font-size: 0.9rem;
-                        line-height: 1.4rem;
-                        text-align: center;
-                    }
-                }
-            }
-            
-            .tranparent-button {
-                width: 29.4rem;
-                height: 4.4rem;
-                border-radius: 1.25rem;
-                border: solid 2px map-get($colors, white );
-                background:  map-get($colors, blue-turquoise );
-            
-                @include media-max-width($breakpoint-x-large){
-                    width: 25rem;
-                }
-            
-                @include media-max-width($breakpoint-small){
-                    width: 15rem;
-                    height: 4.8rem;
-                }
-            
-                &:hover,
-                &:active {
-                 background: map-get($colors, blue );
-                 border-color: map-get($colors, blue );
-                }
-
-                
-                &__text{
-                    font-family: $font-nunito;
-                    font-weight: 800;
-                    font-size: 1.15rem;
-                    line-height: 1.5rem;
-                    color: map-get($colors , white );
-            
-                @include media-max-width($breakpoint-x-x-large){
-                    font-size: 1rem;
-                }
-                
-                @include media-max-width($breakpoint-small){
-                    font-size: 0.9rem;
-                    line-height: 1.2rem;
-                    text-align: center;
-                } 
-            }
-        }
+    @include media-max-width($breakpoint-x-small){
+      top: -6.9rem;
+      left: 12.5rem;
     }
-}
-        
+  }
 
-    &__blue-ball {
-        position: absolute;
-        left: 0;
-        top: 21.4rem;
-    
-        @include media-max-width($breakpoint-medium){
-            height: 16.5rem;
-            width: 11.5rem;
-            left: -2.6rem;
-            top: 13.4rem;
-        }
-    
-        @include media-max-width($breakpoint-small){
-            height: 9.5rem;
-            width: 9.5rem;
-            left: -2.6rem;
-            top: 13.4rem;
-        }
-      }
-    
-    &__vacuum-man {
-        width: 38rem;
-        height: 35.5rem;
-        position: absolute;
-        left: 8.3rem;
-        top: 21.4rem;
-    
-        @include media-max-width($breakpoint-x-x-large){
-            left: 4rem;
-        }
-       
-        @include media-max-width($breakpoint-small){
-            height: 20rem;
-            width: 20.85rem;
-            left: 0.3rem;
-            top: 39.7rem;
-        }
+	.top-block { 
+		display: flex;
+		flex-direction: column;
+		box-sizing: border-box;
+		position: relative;
+		z-index: 100;
 
-        @include media-max-width($breakpoint-x-small){
-            top: 47.7rem;
-        }
-    }  
+		&__title {
+			font-family: $font-nunito;
+			color: map-get($colors , white);
+			font-weight: 800;
+			font-size: 3rem;
+			line-height: 4rem;
+			margin-bottom: 3.5rem;
+		
+			@include media-max-width($breakpoint-x-large){
+				font-size: 2.5rem;
+			}
+		
+			@include media-max-width($breakpoint-small){
+				font-size: 1.7rem;
+				line-height: 2.4rem;
+				margin-bottom: 2rem;
+			}
+		}
+		
+		&__text {
+			font-family: $font-nunito;
+			font-weight: 400;
+			line-height: 1.5rem;
+			font-size: 1.1rem;
+			color:  map-get($colors, dark-gray);
+			text-align: center; 
+			margin-bottom: 2.85rem;
+		
+			@include media-max-width($breakpoint-x-x-large){
+				font-size: 1rem;
+			}
+			@include media-max-width($breakpoint-small){
+				font-size: 0.9rem;
+				line-height: 1.4rem;
+				text-align: center;
+			}
+		}
+		
+		.top_buttons{
+			display: flex;
+			justify-content: space-around;
+			
+			@include media-max-width($breakpoint-large){
+				flex-wrap: wrap;
+			}
+		
+			@include media-max-width($breakpoint-medium){
+				justify-content: center;
+			}
+
+			.orange-button {
+				width: 16.9rem;
+				height: 4.4rem;
+				border-radius: 1.25rem;
+				background: map-get($colors , orange);
+				border: map-get($colors, orange );
+				margin-right: 2rem;
+
+        @include media-max-width($breakpoint-x-large){
+					width: 20rem;
+				}
+			
+				@include media-max-width($breakpoint-large){
+					margin-right: 0;
+					margin-bottom: 1.35rem;
+					width: 40rem;
+				}
+			
+				@include media-max-width($breakpoint-medium){
+					padding-left: 0.95rem;
+				}
+			
+				@include media-max-width($breakpoint-small){
+					height: 3.6rem;
+				}
+				
+				&:hover,
+				&:active {
+				 background: map-get($colors, dark-orange );
+				 border-color: map-get($colors, dark-orange );
+				}
+
+				&__text {
+					font-family: $font-nunito;
+					font-weight: 900;
+					font-size: 1.15rem;
+					line-height: 1.8rem;
+          text-transform: uppercase;
+					color: map-get($colors , white );
+				
+					@include media-max-width($breakpoint-x-x-large){
+						font-size: 1rem;
+					}
+				
+					@include media-max-width($breakpoint-small){
+						font-size: 0.9rem;
+						line-height: 1.4rem;
+						text-align: center;
+					}
+				}
+			}
+			
+			.tranparent-button {
+				width: 29.4rem;
+				height: 4.4rem;
+				border-radius: 1.25rem;
+				border: solid 2px map-get($colors, white );
+				background:  map-get($colors, blue-turquoise );
+			
+				@include media-max-width($breakpoint-x-large){
+					width: 35rem;
+				}
+
+				@include media-max-width($breakpoint-large){
+					width: 40rem;
+				}
+			
+				@include media-max-width($breakpoint-small){
+					height: 4.65rem;
+				}
+			
+				&:hover,
+				&:active {
+				 background: map-get($colors, blue );
+				 border-color: map-get($colors, blue );
+				}
+
+				&__text {
+					font-family: $font-nunito;
+					font-weight: 800;
+					font-size: 1.15rem;
+					line-height: 1.5rem;
+          text-transform: uppercase;
+					color: map-get($colors , white );
+			
+          @include media-max-width($breakpoint-x-x-large){
+            font-size: 1rem;
+          }
+				
+				  @include media-max-width($breakpoint-small){
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            text-align: center;
+				  }
+			  }
+		  }
+	  }
+  }
+		
+
+  &__blue-ball {
+    border: solid 1px map-get($colors, blue );
+    background: map-get($colors, blue);
+    border-radius: 50%;
+    width: 23rem;
+    height: 23rem;
+    position: absolute;
+    top: 21.4rem;
+    left: -9.7rem;
+
+    
+    @include media-max-width($breakpoint-medium){
+      height: 16.5rem;
+      width: 18.5rem;
+      left: -8.6rem;
+      top: 13.4rem;
+    }
+
+    @include media-max-width($breakpoint-small){
+      height: 9.5rem;
+      width: 9.5rem;
+      left: -3.6rem;
+      top: 13.4rem;
+    }
+  }
+
+  &__vacuum-man {
+    width: 38rem;
+    height: 35.5rem;
+    position: absolute;
+    left: 8.3rem;
+    top: 21.4rem;
+
+    @include media-max-width($breakpoint-x-x-large){
+      left: 4rem;
+    }
+      
+    @include media-max-width($breakpoint-small){
+      height: 20rem;
+      width: 20.85rem;
+      left: 0.3rem;
+      top: 39.7rem;
+    }
+
+    @include media-max-width($breakpoint-x-small){
+      top: 47.7rem;
+    }
+  }  
 }
 
 
