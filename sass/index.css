@@ -399,36 +399,34 @@ table {
 }
 @media (max-width: 992px) {
   .info-section {
-    padding-left: 7rem;
-    padding-right: 7rem;
+    padding-left: 9rem;
+    padding-right: 9rem;
   }
 }
 @media (max-width: 768px) {
   .info-section {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 14.5rem;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 6.3rem;
   }
 }
 @media (max-width: 576px) {
   .info-section {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    padding-top: 14.5rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
 @media (max-width: 320px) {
   .info-section {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
-    padding-top: 8rem;
   }
 }
-.info-section .info {
+.info-section .info-text {
   margin-top: 2.5rem;
   text-align: center;
 }
-.info-section .info__title {
+.info-section .info-text .info-text__title {
   font-family: "Nunito", sans-serif;
   color: #0D5682;
   font-weight: 800;
@@ -438,18 +436,18 @@ table {
   text-align: center;
 }
 @media (max-width: 1200px) {
-  .info-section .info__title {
+  .info-section .info-text .info-text__title {
     font-size: 2.4rem;
   }
 }
 @media (max-width: 576px) {
-  .info-section .info__title {
+  .info-section .info-text .info-text__title {
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-bottom: 2rem;
   }
 }
-.info-section .info__text {
+.info-section .info-text .info-text__subtitle {
   font-family: "Nunito", sans-serif;
   color: #3C4A53;
   font-weight: 400;
@@ -458,12 +456,12 @@ table {
   margin-bottom: 7.5rem;
 }
 @media (max-width: 1400px) {
-  .info-section .info__text {
+  .info-section .info-text .info-text__subtitle {
     font-size: 1rem;
   }
 }
 @media (max-width: 576px) {
-  .info-section .info__text {
+  .info-section .info-text .info-text__subtitle {
     font-size: 0.8rem;
     line-height: 1.4rem;
     margin-bottom: 3.15rem;
@@ -480,7 +478,7 @@ table {
     align-content: center;
   }
 }
-.info-section__services .info__blocks {
+.info-section__services .info {
   width: 16.9rem;
   display: flex;
   flex-direction: column;
@@ -489,44 +487,44 @@ table {
   margin-bottom: 11.1rem;
 }
 @media (max-width: 576px) {
-  .info-section__services .info__blocks {
+  .info-section__services .info {
     margin-bottom: 3.8rem;
     flex-wrap: wrap;
   }
 }
-.info-section__services .info__blocks__img-repairs {
+.info-section__services .info__img-repairs {
   width: 6.95rem;
   height: 6.95rem;
 }
-.info-section__services .info__blocks__img-sm-repairs {
+.info-section__services .info__img-sm-repairs {
   width: 6.15rem;
   height: 6.15rem;
 }
-.info-section__services .info__blocks__img-cleaner {
+.info-section__services .info__img-cleaner {
   width: 5.45rem;
   height: 5.45rem;
 }
-.info-section__services .info__blocks__img-chothes {
+.info-section__services .info__img-chothes {
   width: 6.1rem;
   height: 6.1rem;
 }
-.info-section__services .info__blocks__img-painting {
+.info-section__services .info__img-painting {
   width: 7.5rem;
   height: 7.5rem;
 }
-.info-section__services .info__blocks__img-electrician {
+.info-section__services .info__img-electrician {
   width: 5.95rem;
   height: 5.95rem;
 }
-.info-section__services .info__blocks__img-plumber {
+.info-section__services .info__img-plumber {
   width: 6.65rem;
   height: 6.65rem;
 }
-.info-section__services .info__blocks__img-furtiture {
+.info-section__services .info__img-furtiture {
   width: 6.1rem;
   height: 6.1rem;
 }
-.info-section__services .info__blocks .info__sub-title {
+.info-section__services .info .info__sub-title {
   font-family: "Nunito", sans-serif;
   color: #0D5682;
   font-weight: 800;
@@ -534,10 +532,10 @@ table {
   line-height: 2rem;
   margin-top: 1.01rem;
   text-align: center;
-  width: 16.95rem;
+  width: 100%;
 }
 @media (max-width: 576px) {
-  .info-section__services .info__blocks .info__sub-title {
+  .info-section__services .info .info__sub-title {
     width: 11.3rem;
   }
 }/*# sourceMappingURL=index.css.map */

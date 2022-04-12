@@ -59,17 +59,6 @@
     top: -197px;
     right: -4px;
 
-    @include media-max-width($breakpoint-x-x-x-large){
-    //   top: -10rem;
-    //   height: 30rem;
-    //   width: 30rem;
-    }
-
-    @include media-max-width($breakpoint-x-large){
-    //   top: -10rem;
-    //   right: -170px;
-    }
-
     @include media-max-width($breakpoint-medium){
       top: -4rem;
       height: 18.5rem;
@@ -85,7 +74,6 @@
 
     @include media-max-width($breakpoint-x-small){
       top: -6.9rem;
-    //   left: 12.5rem;
     }
   }
 
