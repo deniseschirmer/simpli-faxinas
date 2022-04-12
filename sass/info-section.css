@@ -1,0 +1,171 @@
+.info-section {
+  background-color: #E5E5E5;
+  width: 100%;
+  padding-left: 23.5rem;
+  padding-right: 23.5rem;
+  padding-top: 7.5rem;
+  padding-bottom: 10.5rem;
+  box-sizing: border-box;
+}
+@media (max-width: 1800px) {
+  .info-section {
+    padding-left: 16.1rem;
+    padding-right: 16.1rem;
+  }
+}
+@media (max-width: 1400px) {
+  .info-section {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .info-section {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .info-section {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  .info-section {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 14.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .info-section {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    padding-top: 14.5rem;
+  }
+}
+@media (max-width: 320px) {
+  .info-section {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    padding-top: 8rem;
+  }
+}
+.info-section .info {
+  margin-top: 2.5rem;
+  text-align: center;
+}
+.info-section .info__title {
+  font-family: "Nunito", sans-serif;
+  color: #0D5682;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .info-section .info__title {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 576px) {
+  .info-section .info__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+  }
+}
+.info-section .info__text {
+  font-family: "Nunito", sans-serif;
+  color: #3C4A53;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  margin-bottom: 7.5rem;
+}
+@media (max-width: 1400px) {
+  .info-section .info__text {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .info-section .info__text {
+    font-size: 0.8rem;
+    line-height: 1.4rem;
+    margin-bottom: 3.15rem;
+  }
+}
+.info-section__services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 576px) {
+  .info-section__services {
+    flex-direction: column;
+    align-content: center;
+  }
+}
+.info-section__services .info__blocks {
+  width: 16.9rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 11.1rem;
+}
+@media (max-width: 576px) {
+  .info-section__services .info__blocks {
+    margin-bottom: 3.8rem;
+    flex-wrap: wrap;
+  }
+}
+.info-section__services .info__blocks__img-repairs {
+  width: 6.95rem;
+  height: 6.95rem;
+}
+.info-section__services .info__blocks__img-sm-repairs {
+  width: 6.15rem;
+  height: 6.15rem;
+}
+.info-section__services .info__blocks__img-cleaner {
+  width: 5.45rem;
+  height: 5.45rem;
+}
+.info-section__services .info__blocks__img-chothes {
+  width: 6.1rem;
+  height: 6.1rem;
+}
+.info-section__services .info__blocks__img-painting {
+  width: 7.5rem;
+  height: 7.5rem;
+}
+.info-section__services .info__blocks__img-electrician {
+  width: 5.95rem;
+  height: 5.95rem;
+}
+.info-section__services .info__blocks__img-plumber {
+  width: 6.65rem;
+  height: 6.65rem;
+}
+.info-section__services .info__blocks__img-furtiture {
+  width: 6.1rem;
+  height: 6.1rem;
+}
+.info-section__services .info__blocks .info__sub-title {
+  font-family: "Nunito", sans-serif;
+  color: #0D5682;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin-top: 1.01rem;
+  text-align: center;
+  width: 16.95rem;
+}
+@media (max-width: 576px) {
+  .info-section__services .info__blocks .info__sub-title {
+    width: 11.3rem;
+  }
+}/*# sourceMappingURL=info-section.css.map */
