@@ -4,7 +4,6 @@
   padding-left: 23.5rem;
   padding-right: 23.5rem;
   padding-top: 7.5rem;
-  padding-bottom: 10.5rem;
   box-sizing: border-box;
 }
 @media (max-width: 1800px) {
@@ -54,7 +53,7 @@
   margin-top: 2.5rem;
   text-align: center;
 }
-.info-section .info-text .info-text__title {
+.info-section .info-text__title {
   font-family: "Nunito", sans-serif;
   color: #0D5682;
   font-weight: 800;
@@ -64,12 +63,12 @@
   text-align: center;
 }
 @media (max-width: 1200px) {
-  .info-section .info-text .info-text__title {
+  .info-section .info-text__title {
     font-size: 2.4rem;
   }
 }
 @media (max-width: 576px) {
-  .info-section .info-text .info-text__title {
+  .info-section .info-text__title {
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-bottom: 2rem;

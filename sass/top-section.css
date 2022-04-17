@@ -217,7 +217,7 @@
 }
 .top-section .top-block .top_buttons .tranparent-button:hover, .top-section .top-block .top_buttons .tranparent-button:active {
   background: #155783;
-  border-color: #155783;
+  border-color: #FFFFFF;
 }
 .top-section .top-block .top_buttons .tranparent-button__text {
   font-family: "Nunito", sans-serif;

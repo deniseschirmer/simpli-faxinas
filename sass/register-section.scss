@@ -1,0 +1,350 @@
+@import "_variables.scss";
+
+@mixin media-max-width($width) {
+	@media (max-width: $width){
+	  @content;  
+	}
+}
+
+.register-section {
+  background: linear-gradient( 180deg, #003963 0%, #155783 100%);
+	width: 100%;
+	padding-left: 17.1rem;
+	padding-right: 15.8rem;
+	padding-top: 9.2rem;
+	padding-bottom: 11.3rem;
+	box-sizing: border-box;
+
+
+  @include media-max-width($breakpoint-x-x-x-large){
+    padding-left: 16.1rem;
+    padding-right: 16.1rem; 
+  }
+
+  @include media-max-width($breakpoint-x-x-large){
+		padding-left: 15.5rem;
+		padding-right: 15.5rem;  
+	}
+
+  @include media-max-width($breakpoint-x-large){
+    padding-left: 13rem;
+    padding-right: 13rem; 
+	}
+
+	@include media-max-width($breakpoint-large){
+		padding-left: 9rem;
+		padding-right: 9rem; 
+	}
+
+	@include media-max-width($breakpoint-medium){
+		padding-left: 6rem;
+		padding-right: 6rem; 
+	}
+
+  @include media-max-width($breakpoint-small){
+		padding-left: 4rem;
+		padding-right: 4rem; 
+	}
+
+	@include media-max-width($breakpoint-x-small){
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+
+  &__orange-circle {
+    border: solid 1px map-get($colors, orange-ball );
+    background: map-get($colors, orange-ball);
+    border-radius: 13.45rem 13.45rem 13.45rem 13.45rem;
+    width: 13.45rem;
+    height: 13.45rem;
+    margin-left: -10.35rem;
+    margin-top: -15.8rem;
+
+    @include media-max-width($breakpoint-x-x-x-large){
+    margin-left: -20rem; 
+    }
+
+    @include media-max-width($breakpoint-x-large){
+      width: 11.9rem;
+      height: 11.9rem;
+      margin-left: -15.65rem;
+      margin-top: -15.65rem;
+    }
+
+    @include media-max-width($breakpoint-large){
+      margin-left: -11.3rem;
+    }
+
+    @include media-max-width($breakpoint-small){
+    width: 6.3rem;
+    height: 6.3rem;
+    margin-left: -5.9rem;
+    margin-top: -12.2rem;
+  }
+}
+
+  .register-services {
+    display: flex;
+    justify-content: space-around;
+
+    @include media-max-width($breakpoint-x-x-large){
+      flex-wrap: wrap; 
+    }
+
+    @include media-max-width($breakpoint-small){
+      margin-right: -1.7rem;
+    }
+
+    .register {
+      background: map-get($colors, ice);
+      width: 35.65rem;
+      height: 31.45rem;
+      border-radius: 9%;
+      display: flex;
+      flex-direction: column;
+      z-index: 100;
+      margin-right: 1.9rem;
+      margin-bottom: 1.9rem;
+      box-sizing: border-box;
+    
+      @include media-max-width($breakpoint-medium){
+        width: 29.4rem; 
+      }
+      
+      @include media-max-width($breakpoint-small){
+        width: 16.9rem;
+        height: 23.4rem;
+      }
+
+      &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .register__title {
+          font-family: $font-nunito;
+          color: map-get($colors , dark-blue);
+          font-weight: 800; 
+          font-size: 3rem;
+          line-height: 4.1rem;
+          margin-bottom: 3.2rem;
+          margin-top: 3.35rem;
+          text-align: center;
+        
+          @include media-max-width($breakpoint-medium){
+            margin-bottom: 1.9rem;
+            margin-top: 1.9rem;
+            font-size: 2.1rem;
+          }
+        
+          @include media-max-width($breakpoint-small){
+            font-size: 1.8rem;
+            line-height: 2.4rem;
+            margin-bottom: 1.3rem;
+            margin-top: 1.4rem;
+          }
+        }
+        
+        .register__subtitle {
+          font-family: $font-nunito;
+          color: map-get($colors , dark-gray);
+          font-weight: 400;
+          font-size: 1.15rem;
+          line-height: 1.5rem;
+          text-align: center;
+          padding-left: 3.45rem;
+          padding-right: 3.45rem;
+        
+          
+          @include media-max-width($breakpoint-small){
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+          }
+        }
+        
+        .text--bold {
+          font-family: $font-nunito;
+          color: map-get($colors , dark-gray);
+          font-weight: 800;
+          font-size: 18px;
+          line-height: 24.55px;
+        }
+        
+        .text--blue {
+          font-family: $font-nunito;
+          color: map-get($colors , light-blue);
+          font-weight: 400;
+          font-size: 1.15rem;
+          line-height: 1.35rem;
+          margin-top: 1.15rem;
+        
+          &:hover,
+          &:active {
+          color: map-get($colors, dark );
+          }
+        }
+        
+        .vertical-row {
+          border: 1px solid map-get($colors, light-blue );
+          width: 10.4rem;
+          margin-bottom: 2.7rem;
+        
+          &:hover,
+          &:active {
+          border: map-get($colors, dark );
+          }
+
+          @include media-max-width($breakpoint-small){
+            margin-bottom: 0.9rem;
+          }
+        }
+        
+        .register__orange-btn {
+          width: 16.9rem;
+          height: 4.4rem;
+          border-radius: 1.25rem;
+          background: map-get($colors , orange);
+          border: map-get($colors, orange );
+          margin-right: 9.4rem;
+          margin-left: 9.4rem;
+        
+          &:hover,
+          &:active {
+          background: map-get($colors, dark-orange );
+          border-color: map-get($colors, dark-orange );
+          }
+        
+          @include media-max-width($breakpoint-x-x-large){
+            width: 29.4rem;
+          }
+        
+          @include media-max-width($breakpoint-x-large){
+            width: 31rem;
+          }
+        
+          @include media-max-width($breakpoint-medium){
+            width: 21rem;
+            height: 4.1rem;
+            margin-right: 0.95rem;
+            margin-left: 0.95rem;
+          }
+        
+          @include media-max-width($breakpoint-small){
+            width: 15rem;
+            height: 3.65rem;
+            border-radius: 0.8rem;
+          }
+
+          .register__text-btn {
+            font-family: $font-nunito;
+            color: map-get($colors , white);
+            font-weight: 900;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
+            text-align: center;
+            text-transform: uppercase;
+            
+            @include media-max-width($breakpoint-small){
+              font-size: 0.9rem;
+              line-height: 1.4rem;
+            }
+          }
+        }
+        
+        .register__transparent-btn {
+          width: 29.4rem;
+          height: 4.4rem;
+          border-radius: 1.25rem;
+          border: solid 2px map-get($colors, dark-blue );
+          background:  map-get($colors, ice );
+          margin-right: 3.15rem;
+          margin-left: 3.15rem;
+          margin-bottom: 6.3rem;		
+          margin-top: 5.6rem;
+        
+          &:hover,
+          &:active {
+            background: map-get($colors, dark-blue );
+            border-color: map-get($colors, blue );
+          }
+        
+          @include media-max-width($breakpoint-medium){
+            width: 21rem;
+            height: 6rem;
+            margin-bottom: 3.35rem;
+            margin-left: 1.95rem;
+            margin-top: 7.2rem;
+            margin-right: 1.95rem;
+          }
+        
+          @include media-max-width($breakpoint-small){
+            width: 15rem;
+            border-radius: 0.8rem;
+            margin-top: 1.2rem;
+          }
+
+          .register__text-transparent-btn {
+            font-family: $font-nunito;
+            color: map-get($colors , dark-blue);
+            font-weight: 800;
+            font-size: 1.15rem;
+            line-height: 1.8rem;
+            text-align: center;
+            text-transform: uppercase;
+          
+            &:hover,
+            &:active {
+              color: map-get($colors, white );
+            }
+          
+            @include media-max-width($breakpoint-small){
+              font-size: 0.9rem;
+              line-height: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+      
+  
+  .blue-circle {
+    width: 29.3rem;
+    height: 29.3rem;
+    border: solid 1px map-get($colors, circle-blue );
+    background: map-get($colors, circle-blue);
+    border-radius: 50%;
+    position: absolute;
+    margin-top: 6rem;
+    right: 1.4rem;
+  
+    @include media-max-width($breakpoint-x-x-large){
+      margin-top: 40rem;
+    }
+  
+    @include media-max-width($breakpoint-small){
+      width: 8.4rem;
+      height: 17.7rem;
+      right: 0px;
+      border-radius: 20.7rem 0 0 20.7rem;
+    }
+  }
+  
+  // .register-section__img-woman {
+  //   width: 22.65rem;
+  //   height: 29rem;
+  //   margin-left: -6.5rem;
+  //   margin-top: -7.65rem;
+  // }
+  
+  // .register-section__img-girl {
+  //   width: 21.7rem;
+  //   height: 45.65rem;
+  //   left: 11.8rem;
+  //   }
+  }
+}
+
+
+

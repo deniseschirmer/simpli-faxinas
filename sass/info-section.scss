@@ -12,7 +12,6 @@
 	padding-left: 23.5rem;
 	padding-right: 23.5rem;
 	padding-top: 7.5rem;
-	padding-bottom: 10.5rem;
 	box-sizing: border-box;
 
   @include media-max-width($breakpoint-x-x-x-large){
@@ -55,7 +54,7 @@
     margin-top: 2.5rem;
     text-align: center;
 
-    .info-text__title {
+    &__title {
       font-family: $font-nunito;
       color: map-get($colors , dark-blue);
       font-weight: 800; 
