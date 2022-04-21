@@ -9,8 +9,8 @@
 }
 @media (max-width: 1800px) {
   .register-section {
-    padding-left: 16.1rem;
-    padding-right: 16.1rem;
+    padding-left: 14.1rem;
+    padding-right: 13.1rem;
   }
 }
 @media (max-width: 1400px) {
@@ -29,6 +29,7 @@
   .register-section {
     padding-left: 9rem;
     padding-right: 9rem;
+    padding-bottom: 5.3rem;
   }
 }
 @media (max-width: 768px) {
@@ -91,11 +92,7 @@
 @media (max-width: 1400px) {
   .register-section .register-services {
     flex-wrap: wrap;
-  }
-}
-@media (max-width: 576px) {
-  .register-section .register-services {
-    margin-right: -1.7rem;
+    justify-content: center;
   }
 }
 .register-section .register-services .register {
@@ -104,15 +101,20 @@
   height: 31.45rem;
   border-radius: 9%;
   display: flex;
-  flex-direction: column;
   z-index: 100;
-  margin-right: 1.9rem;
-  margin-bottom: 1.9rem;
   box-sizing: border-box;
+}
+@media (max-width: 1800px) {
+  .register-section .register-services .register {
+    margin-bottom: 1.9rem;
+    margin-right: 1.9rem;
+    width: 30.4rem;
+  }
 }
 @media (max-width: 768px) {
   .register-section .register-services .register {
     width: 29.4rem;
+    margin-right: 0;
   }
 }
 @media (max-width: 576px) {
@@ -125,6 +127,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+  padding-bottom: 2.2rem;
+}
+@media (max-width: 768px) {
+  .register-section .register-services .register__container {
+    padding: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .register-section .register-services .register__container {
+    padding: 1rem;
+  }
 }
 .register-section .register-services .register__container .register__title {
   font-family: "Nunito", sans-serif;
@@ -132,13 +148,11 @@
   font-weight: 800;
   font-size: 3rem;
   line-height: 4.1rem;
-  margin-bottom: 3.2rem;
   margin-top: 3.35rem;
   text-align: center;
 }
 @media (max-width: 768px) {
   .register-section .register-services .register__container .register__title {
-    margin-bottom: 1.9rem;
     margin-top: 1.9rem;
     font-size: 2.1rem;
   }
@@ -147,7 +161,6 @@
   .register-section .register-services .register__container .register__title {
     font-size: 1.8rem;
     line-height: 2.4rem;
-    margin-bottom: 1.3rem;
     margin-top: 1.4rem;
   }
 }
@@ -158,15 +171,11 @@
   font-size: 1.15rem;
   line-height: 1.5rem;
   text-align: center;
-  padding-left: 3.45rem;
-  padding-right: 3.45rem;
 }
 @media (max-width: 576px) {
   .register-section .register-services .register__container .register__subtitle {
     font-size: 0.9rem;
     line-height: 1.2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 }
 .register-section .register-services .register__container .text--bold {
@@ -206,29 +215,22 @@
   border-radius: 1.25rem;
   background: #FF6D1B;
   border: #FF6D1B;
-  margin-right: 9.4rem;
-  margin-left: 9.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .register-section .register-services .register__container .register__orange-btn:hover, .register-section .register-services .register__container .register__orange-btn:active {
   background: #CC3013;
   border-color: #CC3013;
 }
-@media (max-width: 1400px) {
+@media (max-width: 1800px) {
   .register-section .register-services .register__container .register__orange-btn {
-    width: 29.4rem;
-  }
-}
-@media (max-width: 1200px) {
-  .register-section .register-services .register__container .register__orange-btn {
-    width: 31rem;
+    width: 25.4rem;
   }
 }
 @media (max-width: 768px) {
   .register-section .register-services .register__container .register__orange-btn {
-    width: 21rem;
     height: 4.1rem;
-    margin-right: 0.95rem;
-    margin-left: 0.95rem;
   }
 }
 @media (max-width: 576px) {
@@ -244,7 +246,6 @@
   font-weight: 900;
   font-size: 1.15rem;
   line-height: 1.8rem;
-  text-align: center;
   text-transform: uppercase;
 }
 @media (max-width: 576px) {
@@ -254,35 +255,33 @@
   }
 }
 .register-section .register-services .register__container .register__transparent-btn {
-  width: 29.4rem;
+  width: 28.4rem;
   height: 4.4rem;
   border-radius: 1.25rem;
   border: solid 2px #0D5682;
   background: #F4F9FF;
-  margin-right: 3.15rem;
-  margin-left: 3.15rem;
-  margin-bottom: 6.3rem;
-  margin-top: 5.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .register-section .register-services .register__container .register__transparent-btn:hover, .register-section .register-services .register__container .register__transparent-btn:active {
   background: #0D5682;
   border-color: #155783;
 }
+@media (max-width: 1800px) {
+  .register-section .register-services .register__container .register__transparent-btn {
+    width: 25.4rem;
+  }
+}
 @media (max-width: 768px) {
   .register-section .register-services .register__container .register__transparent-btn {
-    width: 21rem;
     height: 6rem;
-    margin-bottom: 3.35rem;
-    margin-left: 1.95rem;
-    margin-top: 7.2rem;
-    margin-right: 1.95rem;
   }
 }
 @media (max-width: 576px) {
   .register-section .register-services .register__container .register__transparent-btn {
     width: 15rem;
     border-radius: 0.8rem;
-    margin-top: 1.2rem;
   }
 }
 .register-section .register-services .register__container .register__transparent-btn .register__text-transparent-btn {
@@ -315,7 +314,12 @@
 }
 @media (max-width: 1400px) {
   .register-section .register-services .blue-circle {
-    margin-top: 40rem;
+    margin-top: 33rem;
+  }
+}
+@media (max-width: 1200px) {
+  .register-section .register-services .blue-circle {
+    margin-top: 37rem;
   }
 }
 @media (max-width: 576px) {

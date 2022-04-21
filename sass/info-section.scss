@@ -1,10 +1,5 @@
 @import "_variables.scss";
-
-@mixin media-max-width($width) {
-	@media (max-width: $width){
-	  @content;  
-	}
-}
+@import "_mixins";
 
 .info-section {
   background-color: map-get($colors, off-white);
@@ -37,7 +32,7 @@
 	@include media-max-width($breakpoint-medium){
 		padding-left: 6rem;
 		padding-right: 6rem; 
-		padding-top: 6.3rem; 
+		padding-top: 2.3rem; 
 	}
 
   @include media-max-width($breakpoint-small){

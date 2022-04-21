@@ -1,10 +1,5 @@
 @import "_variables.scss";
-
-@mixin media-max-width($width) {
-	@media (max-width: $width){
-	  @content;  
-	}
-}
+@import "_mixins";
 
 .top-section {
 	background-color: map-get($colors , blue-turquoise);

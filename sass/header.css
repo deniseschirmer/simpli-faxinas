@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: #13C1D4;
+  position: absolute;
+  box-sizing: border-box;
+  padding-top: 6rem;
+}
+@media (max-width: 576px) {
+  .header {
+    padding-top: 2rem;
+  }
+}
+.header__logo {
+  width: 19rem;
+  height: 7rem;
+  margin: auto;
+  position: relative;
+  z-index: 100;
+}
+@media (max-width: 576px) {
+  .header__logo {
+    width: 8.5rem;
+    height: 3.5rem;
+  }
+}/*# sourceMappingURL=header.css.map */
