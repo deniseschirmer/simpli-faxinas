@@ -1,0 +1,292 @@
+@import "_variables.scss";
+@import "_mixins";
+
+.services-section {
+  background-color: map-get($colors, off-white);
+  width: 100%;
+	padding-left: 29.7rem;
+	padding-right: 29.7rem;
+	padding-top: 7.5rem;
+	padding-bottom: 8.8rem;
+	box-sizing: border-box;
+
+  @include media-max-width($breakpoint-x-x-x-large){
+    padding-left: 14.1rem;
+    padding-right: 13.1rem; 
+  }
+
+  @include media-max-width($breakpoint-x-x-large){
+		padding-left: 15.5rem;
+		padding-right: 15.5rem;  
+	}
+
+  @include media-max-width($breakpoint-x-large){
+    padding-left: 12rem;
+    padding-right: 12rem; 
+	}
+
+	@include media-max-width($breakpoint-large){
+		padding-left: 9rem;
+		padding-right: 9rem; 
+    padding-bottom: 5.3rem;
+	}
+
+	@include media-max-width($breakpoint-medium){
+		padding-left: 6rem;
+		padding-right: 6rem; 
+    padding-top: 2.3rem;
+	}
+
+  @include media-max-width($breakpoint-small){
+		padding-left: 4rem;
+		padding-right: 4rem; 
+	}
+
+	@include media-max-width($breakpoint-x-small){
+		padding-left: 3.5rem;
+		padding-right: 3.5rem;
+	}
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+
+    .services {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: 2.5rem;
+
+      &__title {
+        font-family: $font-nunito;
+        color: map-get($colors , dark-blue);
+        font-weight: 800; 
+        font-size: 3rem;
+        line-height: 4.1rem;
+        text-align: center;
+        margin-bottom: 3.2rem;
+      
+        @include media-max-width($breakpoint-medium){
+          font-size: 2.1rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          font-size: 1.8rem;
+          line-height: 2.4rem;
+        }
+      }
+      
+      &__subtitle {
+        font-family: $font-nunito;
+        color: map-get($colors , dark-gray);
+        font-weight: 400;
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        text-align: center;
+          
+        @include media-max-width($breakpoint-small){
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+        }
+      }
+      
+      &__subtitle--bold {
+        font-family: $font-nunito;
+        color: map-get($colors , dark-gray);
+        font-weight: 800;
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+          
+        @include media-max-width($breakpoint-small){
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+        }
+      }
+    }
+  }
+
+
+    .services-section__block-numbers {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 5rem;
+
+      
+      @include media-max-width($breakpoint-x-large){
+        flex-wrap: wrap;
+      }
+
+      @include media-max-width($breakpoint-large){
+        justify-content: center;
+      }
+    
+      .block-numbers {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 17.3rem;
+        align-items: center;
+        margin-right: 1.9rem;
+
+        &__img-numbers {
+          width: 2.8rem;
+          height: 6.15rem;
+        
+          @include media-max-width($breakpoint-small){
+            width: 1.85rem;
+            height: 4.1rem;
+          }
+        }
+        
+        &__text--orange {
+          font-family: $font-nunito;
+          color: map-get($colors , orange-ball);
+          font-weight: 700;
+          font-size: 1.5rem;
+          line-height: 2rem;
+          text-align: center;
+          height: 100%;
+          margin-top: 0.95rem;
+        
+          @include media-max-width($breakpoint-small){
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+          }
+        }
+      }
+    }
+
+      .services__arrow {
+        width: 1.7rem;
+        height: 2.2rem;
+
+        @include media-max-width($breakpoint-x-large){
+          display: none;
+        }
+      }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5rem;
+
+    @include media-max-width($breakpoint-large){
+      flex-wrap: wrap;
+    }
+
+    @include media-max-width($breakpoint-medium){
+      justify-content: center;
+    }
+
+    .services-button__orange {
+      width: 16.9rem;
+      height: 4.4rem;
+      border-radius: 1.25rem;
+      background: map-get($colors , orange);
+      border: map-get($colors, orange );
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+      
+      @include media-max-width($breakpoint-x-large){
+        width: 20rem;
+      }
+    
+      @include media-max-width($breakpoint-large){
+        margin-right: 0;
+        margin-bottom: 1.35rem;
+        width: 40rem;
+      }
+    
+      @include media-max-width($breakpoint-medium){
+        padding-left: 0.95rem;
+      }
+    
+      @include media-max-width($breakpoint-small){
+        height: 3.6rem;
+      }
+    
+      &:hover,
+      &:active {
+      background: map-get($colors, dark-orange );
+      border-color: map-get($colors, dark-orange );
+      }
+
+      .services-button__text-orange {
+        font-family: $font-nunito;
+        color: map-get($colors , white);
+        font-weight: 900;
+        font-size: 1.15rem;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+      
+        @include media-max-width($breakpoint-x-x-large){
+          font-size: 1rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+          text-align: center;
+        }
+      }
+    }
+    
+    .services-button__tranparent {
+      width: 28.4rem;
+      height: 4.4rem;
+      border-radius: 1.25rem;
+      border: solid 2px map-get($colors, dark-blue );
+      background:  map-get($colors, ice );
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+    
+      @include media-max-width($breakpoint-x-large){
+        width: 35rem;
+      }
+    
+      @include media-max-width($breakpoint-large){
+        width: 40rem;
+      }
+    
+      @include media-max-width($breakpoint-small){
+        height: 4.65rem;
+      }
+      
+    
+      &:hover,
+      &:active {
+        background: map-get($colors, dark-blue );
+        border-color: map-get($colors, blue );
+      }
+
+      .services-button__text-transparent {
+        font-family: $font-nunito;
+        color: map-get($colors , dark-blue);
+        font-weight: 800;
+        font-size: 1.15rem;
+        line-height: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+      
+        @include media-max-width($breakpoint-x-x-large){
+          font-size: 1rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+          text-align: center;
+        }
+      
+        &:hover,
+        &:active {
+          color: map-get($colors, off-white );
+        }
+      }
+    }
+  } 
+}
+

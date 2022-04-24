@@ -1,0 +1,293 @@
+.services-section {
+  background-color: #E5E5E5;
+  width: 100%;
+  padding-left: 29.7rem;
+  padding-right: 29.7rem;
+  padding-top: 7.5rem;
+  padding-bottom: 8.8rem;
+  box-sizing: border-box;
+}
+@media (max-width: 1800px) {
+  .services-section {
+    padding-left: 14.1rem;
+    padding-right: 13.1rem;
+  }
+}
+@media (max-width: 1400px) {
+  .services-section {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .services-section {
+    padding-left: 12rem;
+    padding-right: 12rem;
+  }
+}
+@media (max-width: 992px) {
+  .services-section {
+    padding-left: 9rem;
+    padding-right: 9rem;
+    padding-bottom: 5.3rem;
+  }
+}
+@media (max-width: 768px) {
+  .services-section {
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 2.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-section {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+@media (max-width: 320px) {
+  .services-section {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+}
+.services-section__block {
+  display: flex;
+  flex-direction: column;
+}
+.services-section__block .services {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-top: 2.5rem;
+}
+.services-section__block .services__title {
+  font-family: "Nunito", sans-serif;
+  color: #0D5682;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+}
+@media (max-width: 768px) {
+  .services-section__block .services__title {
+    font-size: 2.1rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-section__block .services__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+.services-section__block .services__subtitle {
+  font-family: "Nunito", sans-serif;
+  color: #3C4A53;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  text-align: center;
+}
+@media (max-width: 576px) {
+  .services-section__block .services__subtitle {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+.services-section__block .services__subtitle--bold {
+  font-family: "Nunito", sans-serif;
+  color: #3C4A53;
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+}
+@media (max-width: 576px) {
+  .services-section__block .services__subtitle--bold {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+  }
+}
+.services-section .services-section__block-numbers {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+@media (max-width: 1200px) {
+  .services-section .services-section__block-numbers {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 992px) {
+  .services-section .services-section__block-numbers {
+    justify-content: center;
+  }
+}
+.services-section .services-section__block-numbers .block-numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 17.3rem;
+  align-items: center;
+  margin-right: 1.9rem;
+}
+.services-section .services-section__block-numbers .block-numbers__img-numbers {
+  width: 2.8rem;
+  height: 6.15rem;
+}
+@media (max-width: 576px) {
+  .services-section .services-section__block-numbers .block-numbers__img-numbers {
+    width: 1.85rem;
+    height: 4.1rem;
+  }
+}
+.services-section .services-section__block-numbers .block-numbers__text--orange {
+  font-family: "Nunito", sans-serif;
+  color: #EB6A51;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  height: 100%;
+  margin-top: 0.95rem;
+}
+@media (max-width: 576px) {
+  .services-section .services-section__block-numbers .block-numbers__text--orange {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+  }
+}
+.services-section .services__arrow {
+  width: 1.7rem;
+  height: 2.2rem;
+}
+@media (max-width: 1200px) {
+  .services-section .services__arrow {
+    display: none;
+  }
+}
+.services-section__buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5rem;
+}
+@media (max-width: 992px) {
+  .services-section__buttons {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .services-section__buttons {
+    justify-content: center;
+  }
+}
+.services-section__buttons .services-button__orange {
+  width: 16.9rem;
+  height: 4.4rem;
+  border-radius: 1.25rem;
+  background: #FF6D1B;
+  border: #FF6D1B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+@media (max-width: 1200px) {
+  .services-section__buttons .services-button__orange {
+    width: 20rem;
+  }
+}
+@media (max-width: 992px) {
+  .services-section__buttons .services-button__orange {
+    margin-right: 0;
+    margin-bottom: 1.35rem;
+    width: 40rem;
+  }
+}
+@media (max-width: 768px) {
+  .services-section__buttons .services-button__orange {
+    padding-left: 0.95rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-section__buttons .services-button__orange {
+    height: 3.6rem;
+  }
+}
+.services-section__buttons .services-button__orange:hover, .services-section__buttons .services-button__orange:active {
+  background: #CC3013;
+  border-color: #CC3013;
+}
+.services-section__buttons .services-button__orange .services-button__text-orange {
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .services-section__buttons .services-button__orange .services-button__text-orange {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-section__buttons .services-button__orange .services-button__text-orange {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+}
+.services-section__buttons .services-button__tranparent {
+  width: 28.4rem;
+  height: 4.4rem;
+  border-radius: 1.25rem;
+  border: solid 2px #0D5682;
+  background: #F4F9FF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .services-section__buttons .services-button__tranparent {
+    width: 35rem;
+  }
+}
+@media (max-width: 992px) {
+  .services-section__buttons .services-button__tranparent {
+    width: 40rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-section__buttons .services-button__tranparent {
+    height: 4.65rem;
+  }
+}
+.services-section__buttons .services-button__tranparent:hover, .services-section__buttons .services-button__tranparent:active {
+  background: #0D5682;
+  border-color: #155783;
+}
+.services-section__buttons .services-button__tranparent .services-button__text-transparent {
+  font-family: "Nunito", sans-serif;
+  color: #0D5682;
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .services-section__buttons .services-button__tranparent .services-button__text-transparent {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .services-section__buttons .services-button__tranparent .services-button__text-transparent {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+}
+.services-section__buttons .services-button__tranparent .services-button__text-transparent:hover, .services-section__buttons .services-button__tranparent .services-button__text-transparent:active {
+  color: #E5E5E5;
+}/*# sourceMappingURL=services-section.css.map */
