@@ -371,7 +371,7 @@ table {
 }
 
 .info-section {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
   width: 100%;
   padding-left: 23.5rem;
   padding-right: 23.5rem;
@@ -873,30 +873,15 @@ table {
 }
 
 .services-section {
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
   width: 100%;
-  padding-left: 29.7rem;
-  padding-right: 29.7rem;
-  padding-top: 7.5rem;
-  padding-bottom: 8.8rem;
+  padding: 7.5rem 18rem 8.8rem 18rem;
   box-sizing: border-box;
-}
-@media (max-width: 1800px) {
-  .services-section {
-    padding-left: 14.1rem;
-    padding-right: 13.1rem;
-  }
-}
-@media (max-width: 1400px) {
-  .services-section {
-    padding-left: 15.5rem;
-    padding-right: 15.5rem;
-  }
 }
 @media (max-width: 1200px) {
   .services-section {
-    padding-left: 12rem;
-    padding-right: 12rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 @media (max-width: 992px) {
@@ -921,8 +906,8 @@ table {
 }
 @media (max-width: 320px) {
   .services-section {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 }
 .services-section__block {
@@ -984,8 +969,14 @@ table {
 }
 .services-section .services-section__block-numbers {
   display: flex;
-  justify-content: space-around;
   margin-top: 5rem;
+  align-self: center;
+  justify-content: center;
+}
+@media (max-width: 1400px) {
+  .services-section .services-section__block-numbers {
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 1200px) {
   .services-section .services-section__block-numbers {
@@ -995,6 +986,7 @@ table {
 @media (max-width: 992px) {
   .services-section .services-section__block-numbers {
     justify-content: center;
+    flex-direction: column;
   }
 }
 .services-section .services-section__block-numbers .block-numbers {
@@ -1003,7 +995,14 @@ table {
   justify-content: space-around;
   width: 17.3rem;
   align-items: center;
-  margin-right: 1.9rem;
+  margin-right: 20px;
+}
+@media (max-width: 576px) {
+  .services-section .services-section__block-numbers .block-numbers {
+    margin-bottom: 42.78px;
+    margin-right: 0;
+    width: 100%;
+  }
 }
 .services-section .services-section__block-numbers .block-numbers__img-numbers {
   width: 2.8rem;
@@ -1027,17 +1026,44 @@ table {
 }
 @media (max-width: 576px) {
   .services-section .services-section__block-numbers .block-numbers__text--orange {
-    font-size: 1.3rem;
-    line-height: 1.7rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+.services-section .arrow {
+  display: flex;
+  margin-top: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+}
+@media (max-width: 1400px) {
+  .services-section .arrow {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .services-section .arrow {
+    align-self: center;
+    display: block;
+  }
+}
+@media (max-width: 576px) {
+  .services-section .arrow {
+    margin-right: 0;
   }
 }
 .services-section .services__arrow {
   width: 1.7rem;
   height: 2.2rem;
 }
-@media (max-width: 1200px) {
+@media (max-width: 992px) {
   .services-section .services__arrow {
-    display: none;
+    transform: rotate(90deg);
+  }
+}
+@media (max-width: 576px) {
+  .services-section .services__arrow {
+    transform: rotate(90deg);
   }
 }
 .services-section__buttons {
