@@ -134,7 +134,7 @@ table {
   height: 33.9rem;
   position: absolute;
   top: -197px;
-  right: -4px;
+  right: 0;
 }
 @media (max-width: 768px) {
   .top-section__orange-ball {
@@ -1061,11 +1061,6 @@ table {
     transform: rotate(90deg);
   }
 }
-@media (max-width: 576px) {
-  .services-section .services__arrow {
-    transform: rotate(90deg);
-  }
-}
 .services-section__buttons {
   display: flex;
   justify-content: space-around;
@@ -1143,7 +1138,7 @@ table {
   height: 4.4rem;
   border-radius: 1.25rem;
   border: solid 2px #0D5682;
-  background: #F4F9FF;
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1164,8 +1159,8 @@ table {
   }
 }
 .services-section__buttons .services-button__tranparent:hover, .services-section__buttons .services-button__tranparent:active {
-  background: #0D5682;
-  border-color: #155783;
+  background: #FFFFFF;
+  border-color: #0D5682;
 }
 .services-section__buttons .services-button__tranparent .services-button__text-transparent {
   font-family: "Nunito", sans-serif;
@@ -1190,4 +1185,352 @@ table {
 }
 .services-section__buttons .services-button__tranparent .services-button__text-transparent:hover, .services-section__buttons .services-button__tranparent .services-button__text-transparent:active {
   color: #E5E5E5;
+}
+
+.doubt-section {
+  background-color: #F4F9FF;
+  width: 100%;
+  padding: 7.5rem 25rem 6.6rem 25rem;
+  box-sizing: border-box;
+}
+@media (max-width: 1800px) {
+  .doubt-section {
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .doubt-section {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .doubt-section {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .doubt-section {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  .doubt-section {
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 7.5rem;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section {
+    padding: 3.9rem 3rem 4.8rem 3rem;
+    justify-content: center;
+  }
+}
+.doubt-section__block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .doubt-section__block {
+    flex-direction: row;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section__block {
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .doubt-section__block {
+    flex-direction: row;
+  }
+}
+.doubt-section__title {
+  font-family: "Nunito", sans-serif;
+  color: #0D5682;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 4.1rem;
+  text-align: center;
+  margin-bottom: 3.2rem;
+  z-index: 100;
+}
+@media (max-width: 576px) {
+  .doubt-section__title {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+  }
+}
+.doubt-section .doubt {
+  list-style: none;
+  display: flex;
+  z-index: 100;
+}
+.doubt-section .doubt__blue-arrow {
+  width: 0.85rem;
+  height: 0.8rem;
+  margin-right: 1.6rem;
+  margin-top: 0.95rem;
+  margin-bottom: 1.6rem;
+}
+.doubt-section .doubt__blue-arrow:active, .doubt-section .doubt__blue-arrow:hover {
+  transform: matrix(-0.61, -0.75, -0.85, 0.6, 0, -4);
+  transform: rotate(180deg);
+}
+@media (max-width: 576px) {
+  .doubt-section .doubt__blue-arrow {
+    display: flex;
+    margin-top: 0.6rem;
+    margin-bottom: 0.65rem;
+  }
+}
+.doubt-section .doubt__question {
+  list-style: none;
+  font-family: "Nunito", sans-serif;
+  color: #0D5682;
+  font-weight: 800;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+@media (max-width: 576px) {
+  .doubt-section .doubt__question {
+    font-size: 1.15rem;
+    line-height: 1.5rem;
+  }
+}
+.doubt-section .boubt-subtitle {
+  font-family: "Nunito", sans-serif;
+  color: #3C4A53;
+  font-weight: 400;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  margin-bottom: 1.8rem;
+  margin-top: 2.2rem;
+}
+@media (max-width: 576px) {
+  .doubt-section .boubt-subtitle {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-right: 0;
+  }
+}
+.doubt-section__vertical-row {
+  border: 1px solid #C8DBED;
+  margin-bottom: 0.95rem;
+  width: 100%;
+  margin-top: 0.95rem;
+}
+@media (max-width: 1400px) {
+  .doubt-section__vertical-row {
+    margin-bottom: 1.6rem;
+    margin-top: 1.6rem;
+  }
+}
+.doubt-section__orange-circle {
+  border: solid 1px #EB6A51;
+  background: #EB6A51;
+  border-radius: 21.3rem 0 0 21.3rem;
+  width: 12.5rem;
+  height: 21.3rem;
+  position: absolute;
+  right: 0;
+}
+@media (max-width: 1800px) {
+  .doubt-section__orange-circle {
+    width: 10rem;
+    height: 19.4rem;
+  }
+}
+@media (max-width: 1400px) {
+  .doubt-section__orange-circle {
+    width: 7.85rem;
+    height: 15.65rem;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section__orange-circle {
+    width: 3.3rem;
+    height: 6.3rem;
+  }
+}
+.doubt-section__buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+@media (max-width: 992px) {
+  .doubt-section__buttons {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 768px) {
+  .doubt-section__buttons {
+    justify-content: center;
+  }
+}
+.doubt-section__buttons .doubt-button__orange {
+  width: 16.9rem;
+  height: 4.4rem;
+  border-radius: 1.25rem;
+  background: #FF6D1B;
+  border: #FF6D1B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+}
+@media (max-width: 1200px) {
+  .doubt-section__buttons .doubt-button__orange {
+    width: 20rem;
+  }
+}
+@media (max-width: 992px) {
+  .doubt-section__buttons .doubt-button__orange {
+    margin-right: 0;
+    margin-bottom: 1.35rem;
+    width: 40rem;
+  }
+}
+@media (max-width: 768px) {
+  .doubt-section__buttons .doubt-button__orange {
+    padding-left: 0.95rem;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section__buttons .doubt-button__orange {
+    height: 3.6rem;
+  }
+}
+.doubt-section__buttons .doubt-button__orange:hover, .doubt-section__buttons .doubt-button__orange:active {
+  background: #CC3013;
+  border-color: #CC3013;
+}
+.doubt-section__buttons .doubt-button__orange .doubt-button__text-orange {
+  font-family: "Nunito", sans-serif;
+  color: #FFFFFF;
+  font-weight: 900;
+  font-size: 1.15rem;
+  line-height: 1.8rem;
+  text-transform: uppercase;
+}
+@media (max-width: 1400px) {
+  .doubt-section__buttons .doubt-button__orange .doubt-button__text-orange {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section__buttons .doubt-button__orange .doubt-button__text-orange {
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+}
+.doubt-section__buttons .doubt-button__tranparent {
+  width: 29.4rem;
+  height: 4.4rem;
+  border-radius: 1.25rem;
+  border: solid 2px #0D5682;
+  background: #F4F9FF;
+}
+@media (max-width: 1200px) {
+  .doubt-section__buttons .doubt-button__tranparent {
+    width: 35rem;
+  }
+}
+@media (max-width: 992px) {
+  .doubt-section__buttons .doubt-button__tranparent {
+    width: 40rem;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section__buttons .doubt-button__tranparent {
+    height: 4.65rem;
+  }
+}
+.doubt-section__buttons .doubt-button__tranparent:hover, .doubt-section__buttons .doubt-button__tranparent:active {
+  background: #F4F9FF;
+  border-color: #0D5682;
+}
+.doubt-section__buttons .doubt-button__tranparent .doubt-button__text-transparent {
+  font-family: "Nunito", sans-serif;
+  font-weight: 800;
+  font-size: 1.15rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+  color: #0D5682;
+}
+@media (max-width: 1400px) {
+  .doubt-section__buttons .doubt-button__tranparent .doubt-button__text-transparent {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 576px) {
+  .doubt-section__buttons .doubt-button__tranparent .doubt-button__text-transparent {
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    text-align: center;
+  }
+}
+.doubt-section__blue-circle {
+  border: solid 1px #155783;
+  background: #155783;
+  border-radius: 0 34.5rem 34.5rem 0;
+  width: 34.5rem;
+  height: 28.8rem;
+  position: absolute;
+  top: 277rem;
+  left: -21.9rem;
+}
+@media (max-width: 1400px) {
+  .doubt-section__blue-circle {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3.15rem 25rem 2rem 25rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 4.1rem 17rem 1.7rem 17rem;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 4.1rem 3.4rem 1.7rem 3.4rem;
+  }
+}
+.footer .footer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .footer-block__logo {
+  width: 12rem;
+  height: 3.95rem;
+}
+@media (max-width: 576px) {
+  .footer .footer-block__logo {
+    width: 9.65rem;
+    height: 3.2rem;
+  }
+}
+.footer .footer-block__copyright {
+  font-family: "Nunito", sans-serif;
+  color: #3C4A53;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-align: center;
+  margin-top: 1.9rem;
 }/*# sourceMappingURL=index.css.map */

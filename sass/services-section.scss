@@ -180,10 +180,6 @@
         @include media-max-width($breakpoint-large){
           transform: rotate(90deg);
         }
-
-        @include media-max-width($breakpoint-small){
-          transform: rotate(90deg);
-        }
       }
 
   &__buttons {
@@ -259,7 +255,7 @@
       height: 4.4rem;
       border-radius: 1.25rem;
       border: solid 2px map-get($colors, dark-blue );
-      background:  map-get($colors, ice );
+      background:  map-get($colors, white );
       display: flex; 
       justify-content: center;
       align-items: center;
@@ -279,8 +275,8 @@
     
       &:hover,
       &:active {
-        background: map-get($colors, dark-blue );
-        border-color: map-get($colors, blue );
+        background: map-get($colors, white );
+        border-color: map-get($colors, dark-blue );
       }
 
       .services-button__text-transparent {

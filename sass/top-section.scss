@@ -26,10 +26,10 @@
     padding-right: 13rem; 
 	}
 
-    @include media-max-width($breakpoint-large){
-      padding-left: 7rem;
-      padding-right: 7rem; 
-    }
+  @include media-max-width($breakpoint-large){
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
 
 	@include media-max-width($breakpoint-medium){
 		padding-left: 5.5rem;
@@ -52,7 +52,7 @@
     height: 33.9rem;
     position: absolute;
     top: -197px;
-    right: -4px;
+    right: 0;
 
     @include media-max-width($breakpoint-medium){
       top: -4rem;

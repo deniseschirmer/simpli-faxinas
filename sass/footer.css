@@ -1,0 +1,42 @@
+.footer {
+  background-color: #FFFFFF;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3.15rem 25rem 2rem 25rem;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .footer {
+    padding: 4.1rem 17rem 1.7rem 17rem;
+  }
+}
+@media (max-width: 576px) {
+  .footer {
+    padding: 4.1rem 3.4rem 1.7rem 3.4rem;
+  }
+}
+.footer .footer-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer .footer-block__logo {
+  width: 12rem;
+  height: 3.95rem;
+}
+@media (max-width: 576px) {
+  .footer .footer-block__logo {
+    width: 9.65rem;
+    height: 3.2rem;
+  }
+}
+.footer .footer-block__copyright {
+  font-family: "Nunito", sans-serif;
+  color: #3C4A53;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  text-align: center;
+  margin-top: 1.9rem;
+}/*# sourceMappingURL=footer.css.map */

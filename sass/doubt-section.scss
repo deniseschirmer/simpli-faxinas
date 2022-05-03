@@ -1,0 +1,299 @@
+@import "_variables.scss";
+@import "_mixins";
+
+.doubt-section {
+  background-color: map-get($colors, ice);
+  width: 100%;
+  padding: 7.5rem 25rem 6.6rem 25rem;
+	box-sizing: border-box;
+
+  @include media-max-width($breakpoint-x-x-x-large){
+		padding-left: 20.5rem;
+		padding-right: 18.5rem; 
+	}
+
+	@include media-max-width($breakpoint-x-x-large){
+		padding-left: 15.5rem;
+		padding-right: 15.5rem; 
+	}
+
+  	@include media-max-width($breakpoint-x-large){
+    padding-left: 13rem;
+    padding-right: 13rem; 
+	}
+
+  @include media-max-width($breakpoint-large){
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
+
+	@include media-max-width($breakpoint-medium){
+		padding-left: 5.5rem;
+		padding-right: 5.5rem; 
+		padding-top: 7.5rem; 
+	}
+
+	@include media-max-width($breakpoint-small){
+    padding: 3.9rem 3rem 4.8rem 3rem;
+		justify-content: center;
+	}
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+    @include media-max-width($breakpoint-medium){
+      flex-direction: row;
+    }
+  
+    @include media-max-width($breakpoint-small){
+      flex-direction: column;
+    }
+  
+    @include media-max-width($breakpoint-x-small){
+      flex-direction: row;
+    }
+  }
+  
+  &__title {
+    font-family: $font-nunito;
+    color: map-get($colors , dark-blue);
+    font-weight: 800; 
+    font-size: 3rem;
+    line-height: 4.1rem;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    z-index: 100;
+       
+    @include media-max-width($breakpoint-small){
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+  }
+  
+  
+  .doubt {
+    list-style: none;
+    display: flex;
+    z-index: 100;
+
+    &__blue-arrow {
+      width: 0.85rem;
+      height: 0.8rem;
+      margin-right: 1.6rem;
+      margin-top: 0.95rem;
+      margin-bottom: 1.6rem;
+    
+      &:active,
+      &:hover {
+        transform: matrix(-0.61, -0.75, -0.85, 0.6, 0, -4);
+        transform: rotate(180deg);
+      }
+    
+      @include media-max-width($breakpoint-small){
+        display: flex;
+        margin-top: 0.6rem;
+        margin-bottom: 0.65rem;
+      }
+    }
+  
+    &__question {
+      list-style: none;
+      font-family: $font-nunito;
+      color: map-get($colors , dark-blue);
+      font-weight: 800; 
+      font-size: 1.5rem;
+      line-height: 2rem;
+          
+      @include media-max-width($breakpoint-small){
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+      }
+    }
+  }
+
+  .boubt-subtitle {
+    font-family: $font-nunito;
+    color: map-get($colors , dark-gray);
+    font-weight: 400;
+    font-size: 1.15rem; 
+    line-height: 1.5rem;
+    margin-bottom: 1.8rem;
+    margin-top: 2.2rem;
+        
+    @include media-max-width($breakpoint-small){
+      font-size: 0.9rem;
+      line-height: 1.2rem;
+      margin-right: 0;
+    }
+  }
+
+  &__vertical-row {
+    border: 1px solid #C8DBED;
+    margin-bottom: 0.95rem;
+    width: 100%;
+    margin-top: 0.95rem;
+  
+    @include media-max-width($breakpoint-x-x-large){
+      margin-bottom: 1.6rem;
+      margin-top: 1.6rem;
+    }
+  }
+
+  &__orange-circle {
+    border: solid 1px map-get($colors, orange-ball );
+    background: map-get($colors, orange-ball);
+    border-radius: 21.3rem 0 0 21.3rem;
+    width: 12.5rem;
+    height: 21.3rem;
+    position: absolute;
+    right: 0;
+  
+    @include media-max-width($breakpoint-x-x-x-large){
+     width: 10rem;
+     height: 19.4rem;
+    }
+  
+    @include media-max-width($breakpoint-x-x-large){
+      width: 7.85rem;
+      height: 15.65rem;
+     }
+    
+    @include media-max-width($breakpoint-small){
+      width: 3.3rem;
+      height: 6.3rem;
+    }
+  }
+  
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+  
+    @include media-max-width($breakpoint-large){
+      flex-wrap: wrap;
+    }
+  
+    @include media-max-width($breakpoint-medium){
+      justify-content: center;
+    }
+
+    .doubt-button__orange {
+      width: 16.9rem;
+      height: 4.4rem;
+      border-radius: 1.25rem;
+      background: map-get($colors , orange);
+      border: map-get($colors, orange );
+      display: flex; 
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+      
+      @include media-max-width($breakpoint-x-large){
+        width: 20rem;
+      }
+    
+      @include media-max-width($breakpoint-large){
+        margin-right: 0;
+        margin-bottom: 1.35rem;
+        width: 40rem;
+      }
+    
+      @include media-max-width($breakpoint-medium){
+        padding-left: 0.95rem;
+      }
+    
+      @include media-max-width($breakpoint-small){
+        height: 3.6rem;
+      }
+    
+      &:hover,
+      &:active {
+        background: map-get($colors, dark-orange );
+        border-color: map-get($colors, dark-orange );
+      }
+    
+      .doubt-button__text-orange {
+        font-family: $font-nunito;
+        color: map-get($colors , white);
+        font-weight: 900;
+        font-size: 1.15rem;
+        line-height: 1.8rem;
+        text-transform: uppercase;
+      
+        @include media-max-width($breakpoint-x-x-large){
+          font-size: 1rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          font-size: 0.9rem;
+          line-height: 1.4rem;
+          text-align: center;
+        }
+      }
+    }
+    
+    .doubt-button__tranparent {
+      width: 29.4rem;
+      height: 4.4rem;
+      border-radius: 1.25rem;
+      border: solid 2px map-get($colors, dark-blue );
+      background:  map-get($colors, ice );
+    
+      @include media-max-width($breakpoint-x-large){
+        width: 35rem;
+      }
+    
+      @include media-max-width($breakpoint-large){
+        width: 40rem;
+      }
+    
+      @include media-max-width($breakpoint-small){
+        height: 4.65rem;
+      }
+    
+      &:hover,
+      &:active {
+       background: map-get($colors, ice );
+       border-color: map-get($colors, dark-blue );
+      }
+    
+      .doubt-button__text-transparent {
+        font-family: $font-nunito;
+        font-weight: 800;
+        font-size: 1.15rem;
+        line-height: 1.5rem;
+        text-transform: uppercase;
+        color: map-get($colors , dark-blue );
+    
+        @include media-max-width($breakpoint-x-x-large){
+          font-size: 1rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          font-size: 0.9rem;
+          line-height: 1.2rem;
+          text-align: center;
+        }
+      }
+    }  
+  }
+  
+  
+  &__blue-circle {
+    border: solid 1px map-get($colors, blue );
+    background: map-get($colors, blue);
+    border-radius: 0 34.5rem 34.5rem 0;
+    width: 34.5rem;
+    height: 28.8rem;
+    position: absolute;
+    top: 277rem;
+    left: -21.9rem;
+  
+    @include media-max-width($breakpoint-x-x-large){
+      display: none;
+    }
+  }
+}
+

@@ -1,0 +1,49 @@
+@import "_variables.scss";
+@import "_mixins";
+
+.footer {
+  background-color: map-get($colors, white);
+  width: 100%;
+  box-sizing: border-box;
+  padding: 3.15rem 25rem 2rem 25rem;
+  display: flex;
+  justify-content: center;
+
+  @include media-max-width($breakpoint-medium){
+    padding: 4.1rem 17rem 1.7rem 17rem;
+  }
+
+  @include media-max-width($breakpoint-small){
+    padding: 4.1rem 3.4rem 1.7rem 3.4rem;
+  }
+
+  .footer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__logo {
+      width: 12rem;
+      height: 3.95rem;
+    
+    
+      @include media-max-width($breakpoint-small){
+        width: 9.65rem;
+        height: 3.2rem;
+      }
+    }
+    
+    &__copyright {
+      font-family: $font-nunito;
+      color: map-get($colors , dark-gray);
+      font-weight: 400;
+      font-size: 0.9rem; 
+      line-height: 1.2rem;
+      text-align: center;
+      margin-top: 1.9rem;
+    }
+  }
+}
+  
+  
+

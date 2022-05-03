@@ -187,11 +187,6 @@
     transform: rotate(90deg);
   }
 }
-@media (max-width: 576px) {
-  .services-section .services__arrow {
-    transform: rotate(90deg);
-  }
-}
 .services-section__buttons {
   display: flex;
   justify-content: space-around;
@@ -269,7 +264,7 @@
   height: 4.4rem;
   border-radius: 1.25rem;
   border: solid 2px #0D5682;
-  background: #F4F9FF;
+  background: #FFFFFF;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -290,8 +285,8 @@
   }
 }
 .services-section__buttons .services-button__tranparent:hover, .services-section__buttons .services-button__tranparent:active {
-  background: #0D5682;
-  border-color: #155783;
+  background: #FFFFFF;
+  border-color: #0D5682;
 }
 .services-section__buttons .services-button__tranparent .services-button__text-transparent {
   font-family: "Nunito", sans-serif;
