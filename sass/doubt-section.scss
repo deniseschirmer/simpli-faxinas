@@ -17,10 +17,10 @@
 		padding-right: 15.5rem; 
 	}
 
-  	@include media-max-width($breakpoint-x-large){
+  @include media-max-width($breakpoint-x-large){
     padding-left: 13rem;
     padding-right: 13rem; 
-	}
+  }
 
   @include media-max-width($breakpoint-large){
     padding-left: 7rem;
@@ -82,7 +82,7 @@
       width: 0.85rem;
       height: 0.8rem;
       margin-right: 1.6rem;
-      margin-top: 0.95rem;
+      margin-top: 0.65rem;
       margin-bottom: 1.6rem;
     
       &:active,
@@ -113,7 +113,7 @@
     }
   }
 
-  .boubt-subtitle {
+  .doubt-section__subtitle {
     font-family: $font-nunito;
     color: map-get($colors , dark-gray);
     font-weight: 400;
@@ -235,11 +235,14 @@
     }
     
     .doubt-button__tranparent {
-      width: 29.4rem;
+      width: 28.4rem;
       height: 4.4rem;
       border-radius: 1.25rem;
       border: solid 2px map-get($colors, dark-blue );
-      background:  map-get($colors, ice );
+      background:  map-get($colors, white );
+      display: flex; 
+      justify-content: center;
+      align-items: center;
     
       @include media-max-width($breakpoint-x-large){
         width: 35rem;
@@ -288,7 +291,7 @@
     width: 34.5rem;
     height: 28.8rem;
     position: absolute;
-    top: 277rem;
+    top: 266rem;
     left: -21.9rem;
   
     @include media-max-width($breakpoint-x-x-large){

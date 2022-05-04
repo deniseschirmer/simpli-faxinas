@@ -86,7 +86,7 @@
   width: 0.85rem;
   height: 0.8rem;
   margin-right: 1.6rem;
-  margin-top: 0.95rem;
+  margin-top: 0.65rem;
   margin-bottom: 1.6rem;
 }
 .doubt-section .doubt__blue-arrow:active, .doubt-section .doubt__blue-arrow:hover {
@@ -114,7 +114,7 @@
     line-height: 1.5rem;
   }
 }
-.doubt-section .boubt-subtitle {
+.doubt-section .doubt-section__subtitle {
   font-family: "Nunito", sans-serif;
   color: #3C4A53;
   font-weight: 400;
@@ -124,7 +124,7 @@
   margin-top: 2.2rem;
 }
 @media (max-width: 576px) {
-  .doubt-section .boubt-subtitle {
+  .doubt-section .doubt-section__subtitle {
     font-size: 0.9rem;
     line-height: 1.2rem;
     margin-right: 0;
@@ -242,11 +242,14 @@
   }
 }
 .doubt-section__buttons .doubt-button__tranparent {
-  width: 29.4rem;
+  width: 28.4rem;
   height: 4.4rem;
   border-radius: 1.25rem;
   border: solid 2px #0D5682;
-  background: #F4F9FF;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1200px) {
   .doubt-section__buttons .doubt-button__tranparent {
@@ -294,7 +297,7 @@
   width: 34.5rem;
   height: 28.8rem;
   position: absolute;
-  top: 277rem;
+  top: 266rem;
   left: -21.9rem;
 }
 @media (max-width: 1400px) {

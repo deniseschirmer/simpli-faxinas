@@ -4,17 +4,18 @@
 .info-section {
   background-color: map-get($colors, white);
 	width: 100%;
-	padding-left: 23.5rem;
-	padding-right: 23.5rem;
-	padding-top: 7.5rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
+	// padding-left: 23.5rem;
+	// padding-right: 23.5rem;
+	// padding-top: 7.5rem;
 	box-sizing: border-box;
 
   @include media-max-width($breakpoint-x-x-x-large){
-    padding-left: 16.1rem;
-    padding-right: 16.1rem; 
-  }
+		padding-left: 20.5rem;
+		padding-right: 18.5rem; 
+	}
 
-  @include media-max-width($breakpoint-x-x-large){
+	@include media-max-width($breakpoint-x-x-large){
 		padding-left: 15.5rem;
 		padding-right: 15.5rem; 
 	}
@@ -22,27 +23,22 @@
   @include media-max-width($breakpoint-x-large){
     padding-left: 13rem;
     padding-right: 13rem; 
-	}
+  }
 
-	@include media-max-width($breakpoint-large){
-		padding-left: 9rem;
-		padding-right: 9rem; 
-	}
+  @include media-max-width($breakpoint-large){
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
 
 	@include media-max-width($breakpoint-medium){
-		padding-left: 6rem;
-		padding-right: 6rem; 
-		padding-top: 2.3rem; 
+		padding-left: 5.5rem;
+		padding-right: 5.5rem; 
+		padding-top: 7.5rem; 
 	}
 
-  @include media-max-width($breakpoint-small){
-		padding-left: 4rem;
-		padding-right: 4rem; 
-	}
-
-	@include media-max-width($breakpoint-x-small){
-		padding-left: 3.5rem;
-		padding-right: 3.5rem;
+	@include media-max-width($breakpoint-small){
+    padding: 3.9rem 3rem 4.8rem 3rem;
+		justify-content: center;
 	}
 
   .info-text {

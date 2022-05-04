@@ -4,46 +4,38 @@
 .register-section {
   background: linear-gradient( 180deg, #003963 0%, #155783 100%);
 	width: 100%;
-	padding-left: 17.1rem;
-	padding-right: 15.8rem;
-	padding-top: 9.2rem;
-	padding-bottom: 11.3rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
 	box-sizing: border-box;
 
   @include media-max-width($breakpoint-x-x-x-large){
-    padding-left: 14.1rem;
-    padding-right: 13.1rem; 
-  }
+		padding-left: 20.5rem;
+		padding-right: 18.5rem; 
+	}
 
-  @include media-max-width($breakpoint-x-x-large){
+	@include media-max-width($breakpoint-x-x-large){
 		padding-left: 15.5rem;
-		padding-right: 15.5rem;  
+		padding-right: 15.5rem; 
 	}
 
   @include media-max-width($breakpoint-x-large){
     padding-left: 13rem;
     padding-right: 13rem; 
-	}
+  }
 
-	@include media-max-width($breakpoint-large){
-		padding-left: 9rem;
-		padding-right: 9rem; 
-    padding-bottom: 5.3rem;
-	}
+  @include media-max-width($breakpoint-large){
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
 
 	@include media-max-width($breakpoint-medium){
-		padding-left: 6rem;
-		padding-right: 6rem; 
+		padding-left: 5.5rem;
+		padding-right: 5.5rem; 
 	}
 
-  @include media-max-width($breakpoint-small){
-		padding-left: 4rem;
-		padding-right: 4rem; 
-	}
-
-	@include media-max-width($breakpoint-x-small){
-		padding-left: 3.5rem;
-		padding-right: 3.5rem;
+	@include media-max-width($breakpoint-small){
+    padding-left: 3rem;
+    padding-right: 3rem;
+		justify-content: center;
 	}
 
   &__orange-circle {
@@ -52,18 +44,19 @@
     border-radius: 13.45rem 13.45rem 13.45rem 13.45rem;
     width: 13.45rem;
     height: 13.45rem;
-    margin-left: -10.35rem;
+    margin-left: -17.35rem;
     margin-top: -15.8rem;
 
-    @include media-max-width($breakpoint-x-x-x-large){
+    @include media-max-width($breakpoint-x-x-large){
       margin-left: -20rem; 
+      margin-top: -15rem;
     }
 
     @include media-max-width($breakpoint-x-large){
       width: 11.9rem;
       height: 11.9rem;
-      margin-left: -15.65rem;
-      margin-top: -15.65rem;
+      margin-left: -10.65rem;
+      margin-top: -13.65rem;
     }
 
     @include media-max-width($breakpoint-large){
@@ -74,7 +67,7 @@
       width: 6.3rem;
       height: 6.3rem;
       margin-left: -5.9rem;
-      margin-top: -12.2rem;
+      margin-top: -11.2rem;
   }
 }
 
@@ -82,9 +75,12 @@
     display: flex;
     justify-content: space-around;
 
+    @include media-max-width($breakpoint-x-x-x-large){
+      justify-content: center;
+    }
+
     @include media-max-width($breakpoint-x-x-large){
       flex-wrap: wrap; 
-      justify-content: center;
     }
 
     .register {
@@ -93,8 +89,10 @@
       height: 31.45rem;
       border-radius: 9%;
       display: flex;
+      justify-content: space-between;
       z-index: 100;
       box-sizing: border-box;
+      margin-left: 30px;
 
       @include media-max-width($breakpoint-x-x-x-large){
         margin-bottom: 1.9rem;
@@ -110,6 +108,7 @@
       @include media-max-width($breakpoint-small){
         width: 16.9rem;
         height: 23.4rem;
+        margin-left: 0;
       }
 
       &__container {

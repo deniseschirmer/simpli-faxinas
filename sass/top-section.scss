@@ -4,16 +4,14 @@
 .top-section {
 	background-color: map-get($colors , blue-turquoise);
 	width: 100%;
-	padding-left: 36rem;
-	padding-right: 36rem;
-	padding-top: 19.5rem;
-	padding-bottom: 8.5rem;
+	padding: 18.8rem 33rem 8.8rem 32rem;
 	box-sizing: border-box;
 	text-align: center;
 
 	@include media-max-width($breakpoint-x-x-x-large){
-		padding-left: 21.5rem;
-		padding-right: 21.5rem; 
+		padding-left: 20.5rem;
+		padding-right: 18.5rem; 
+    padding-top: 14rem; 
 	}
 
 	@include media-max-width($breakpoint-x-x-large){
@@ -21,10 +19,11 @@
 		padding-right: 15.5rem; 
 	}
 
-  	@include media-max-width($breakpoint-x-large){
+  @include media-max-width($breakpoint-x-large){
     padding-left: 13rem;
     padding-right: 13rem; 
-	}
+    padding-top: 14rem; 
+  }
 
   @include media-max-width($breakpoint-large){
     padding-left: 7rem;
@@ -34,13 +33,13 @@
 	@include media-max-width($breakpoint-medium){
 		padding-left: 5.5rem;
 		padding-right: 5.5rem; 
-		padding-top: 14.5rem; 
+		padding-top: 14rem; 
 	}
 
 	@include media-max-width($breakpoint-small){
-		padding-left: 3.5rem;
-		padding-right: 3.5rem;
-		padding-top: 8rem; 
+		padding-left: 3rem;
+		padding-right: 3rem;
+    padding-top: 8rem;
 		justify-content: center;
 	}
 
@@ -58,7 +57,6 @@
       top: -4rem;
       height: 18.5rem;
       width: 18.5rem;
-      right: -0.15rem;
     }
     
     @include media-max-width($breakpoint-small){
@@ -130,30 +128,33 @@
 			}
 
 			.orange-button {
-				width: 16.9rem;
-				height: 4.4rem;
-				border-radius: 1.25rem;
-				background: map-get($colors , orange);
-				border: map-get($colors, orange );
-				margin-right: 2rem;
-
+        width: 16.9rem;
+        height: 4.4rem;
+        border-radius: 1.25rem;
+        background: map-get($colors , orange);
+        border: map-get($colors, orange );
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+        
         @include media-max-width($breakpoint-x-large){
-					width: 20rem;
-				}
-			
-				@include media-max-width($breakpoint-large){
-					margin-right: 0;
-					margin-bottom: 1.35rem;
-					width: 40rem;
-				}
-			
-				@include media-max-width($breakpoint-medium){
-					padding-left: 0.95rem;
-				}
-			
-				@include media-max-width($breakpoint-small){
-					height: 3.6rem;
-				}
+          width: 20rem;
+        }
+      
+        @include media-max-width($breakpoint-large){
+          margin-right: 0;
+          margin-bottom: 1.35rem;
+          width: 40rem;
+        }
+    
+        @include media-max-width($breakpoint-medium){
+          padding-left: 0.95rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          height: 3.6rem;
+        }
 				
 				&:hover,
 				&:active {
@@ -182,23 +183,26 @@
 			}
 			
 			.tranparent-button {
-				width: 29.4rem;
-				height: 4.4rem;
-				border-radius: 1.25rem;
-				border: solid 2px map-get($colors, white );
+        width: 28.4rem;
+        height: 4.4rem;
+        border-radius: 1.25rem;
+        border: solid 2px map-get($colors, white );
 				background:  map-get($colors, blue-turquoise );
-			
-				@include media-max-width($breakpoint-x-large){
-					width: 35rem;
-				}
-
-				@include media-max-width($breakpoint-large){
-					width: 40rem;
-				}
-			
-				@include media-max-width($breakpoint-small){
-					height: 4.65rem;
-				}
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+      
+        @include media-max-width($breakpoint-x-large){
+          width: 35rem;
+        }
+      
+        @include media-max-width($breakpoint-large){
+          width: 40rem;
+        }
+      
+        @include media-max-width($breakpoint-small){
+          height: 4.65rem;
+        }
 			
 				&:hover,
 				&:active {
@@ -236,7 +240,7 @@
     width: 23rem;
     height: 23rem;
     position: absolute;
-    top: 21.4rem;
+    top: 16.4rem;
     left: -9.7rem;
 
     

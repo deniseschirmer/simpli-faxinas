@@ -1,16 +1,13 @@
 .register-section {
   background: linear-gradient(180deg, #003963 0%, #155783 100%);
   width: 100%;
-  padding-left: 17.1rem;
-  padding-right: 15.8rem;
-  padding-top: 9.2rem;
-  padding-bottom: 11.3rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
   box-sizing: border-box;
 }
 @media (max-width: 1800px) {
   .register-section {
-    padding-left: 14.1rem;
-    padding-right: 13.1rem;
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
   }
 }
 @media (max-width: 1400px) {
@@ -27,27 +24,21 @@
 }
 @media (max-width: 992px) {
   .register-section {
-    padding-left: 9rem;
-    padding-right: 9rem;
-    padding-bottom: 5.3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 @media (max-width: 768px) {
   .register-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
   }
 }
 @media (max-width: 576px) {
   .register-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media (max-width: 320px) {
-  .register-section {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
   }
 }
 .register-section__orange-circle {
@@ -56,20 +47,21 @@
   border-radius: 13.45rem 13.45rem 13.45rem 13.45rem;
   width: 13.45rem;
   height: 13.45rem;
-  margin-left: -10.35rem;
+  margin-left: -17.35rem;
   margin-top: -15.8rem;
 }
-@media (max-width: 1800px) {
+@media (max-width: 1400px) {
   .register-section__orange-circle {
     margin-left: -20rem;
+    margin-top: -15rem;
   }
 }
 @media (max-width: 1200px) {
   .register-section__orange-circle {
     width: 11.9rem;
     height: 11.9rem;
-    margin-left: -15.65rem;
-    margin-top: -15.65rem;
+    margin-left: -10.65rem;
+    margin-top: -13.65rem;
   }
 }
 @media (max-width: 992px) {
@@ -82,17 +74,21 @@
     width: 6.3rem;
     height: 6.3rem;
     margin-left: -5.9rem;
-    margin-top: -12.2rem;
+    margin-top: -11.2rem;
   }
 }
 .register-section .register-services {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 1800px) {
+  .register-section .register-services {
+    justify-content: center;
+  }
+}
 @media (max-width: 1400px) {
   .register-section .register-services {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 .register-section .register-services .register {
@@ -101,8 +97,10 @@
   height: 31.45rem;
   border-radius: 9%;
   display: flex;
+  justify-content: space-between;
   z-index: 100;
   box-sizing: border-box;
+  margin-left: 30px;
 }
 @media (max-width: 1800px) {
   .register-section .register-services .register {
@@ -121,6 +119,7 @@
   .register-section .register-services .register {
     width: 16.9rem;
     height: 23.4rem;
+    margin-left: 0;
   }
 }
 .register-section .register-services .register__container {

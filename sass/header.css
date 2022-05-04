@@ -5,11 +5,41 @@
   background-color: #13C1D4;
   position: absolute;
   box-sizing: border-box;
-  padding-top: 6rem;
+  padding: 6rem 25rem 5.95rem 25rem;
+}
+@media (max-width: 1800px) {
+  .header {
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .header {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 4rem 5.5rem 4rem 5.5rem;
+  }
 }
 @media (max-width: 576px) {
   .header {
-    padding-top: 2rem;
+    padding: 2.3rem 3rem 2.15rem 3rem;
+    justify-content: center;
   }
 }
 .header__logo {

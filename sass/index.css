@@ -56,11 +56,41 @@ table {
   background-color: #13C1D4;
   position: absolute;
   box-sizing: border-box;
-  padding-top: 6rem;
+  padding: 6rem 25rem 5.95rem 25rem;
+}
+@media (max-width: 1800px) {
+  .header {
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .header {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .header {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .header {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
+@media (max-width: 768px) {
+  .header {
+    padding: 4rem 5.5rem 4rem 5.5rem;
+  }
 }
 @media (max-width: 576px) {
   .header {
-    padding-top: 2rem;
+    padding: 2.3rem 3rem 2.15rem 3rem;
+    justify-content: center;
   }
 }
 .header__logo {
@@ -80,17 +110,15 @@ table {
 .top-section {
   background-color: #13C1D4;
   width: 100%;
-  padding-left: 36rem;
-  padding-right: 36rem;
-  padding-top: 19.5rem;
-  padding-bottom: 8.5rem;
+  padding: 18.8rem 33rem 8.8rem 32rem;
   box-sizing: border-box;
   text-align: center;
 }
 @media (max-width: 1800px) {
   .top-section {
-    padding-left: 21.5rem;
-    padding-right: 21.5rem;
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
+    padding-top: 14rem;
   }
 }
 @media (max-width: 1400px) {
@@ -103,6 +131,7 @@ table {
   .top-section {
     padding-left: 13rem;
     padding-right: 13rem;
+    padding-top: 14rem;
   }
 }
 @media (max-width: 992px) {
@@ -115,13 +144,13 @@ table {
   .top-section {
     padding-left: 5.5rem;
     padding-right: 5.5rem;
-    padding-top: 14.5rem;
+    padding-top: 14rem;
   }
 }
 @media (max-width: 576px) {
   .top-section {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     padding-top: 8rem;
     justify-content: center;
   }
@@ -141,7 +170,6 @@ table {
     top: -4rem;
     height: 18.5rem;
     width: 18.5rem;
-    right: -0.15rem;
   }
 }
 @media (max-width: 576px) {
@@ -224,6 +252,9 @@ table {
   border-radius: 1.25rem;
   background: #FF6D1B;
   border: #FF6D1B;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-right: 2rem;
 }
 @media (max-width: 1200px) {
@@ -273,11 +304,14 @@ table {
   }
 }
 .top-section .top-block .top_buttons .tranparent-button {
-  width: 29.4rem;
+  width: 28.4rem;
   height: 4.4rem;
   border-radius: 1.25rem;
   border: solid 2px #FFFFFF;
   background: #13C1D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1200px) {
   .top-section .top-block .top_buttons .tranparent-button {
@@ -325,7 +359,7 @@ table {
   width: 23rem;
   height: 23rem;
   position: absolute;
-  top: 21.4rem;
+  top: 16.4rem;
   left: -9.7rem;
 }
 @media (max-width: 768px) {
@@ -373,15 +407,13 @@ table {
 .info-section {
   background-color: #FFFFFF;
   width: 100%;
-  padding-left: 23.5rem;
-  padding-right: 23.5rem;
-  padding-top: 7.5rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
   box-sizing: border-box;
 }
 @media (max-width: 1800px) {
   .info-section {
-    padding-left: 16.1rem;
-    padding-right: 16.1rem;
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
   }
 }
 @media (max-width: 1400px) {
@@ -398,27 +430,21 @@ table {
 }
 @media (max-width: 992px) {
   .info-section {
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 @media (max-width: 768px) {
   .info-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 2.3rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 7.5rem;
   }
 }
 @media (max-width: 576px) {
   .info-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media (max-width: 320px) {
-  .info-section {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding: 3.9rem 3rem 4.8rem 3rem;
+    justify-content: center;
   }
 }
 .info-section .info-text {
@@ -542,16 +568,13 @@ table {
 .register-section {
   background: linear-gradient(180deg, #003963 0%, #155783 100%);
   width: 100%;
-  padding-left: 17.1rem;
-  padding-right: 15.8rem;
-  padding-top: 9.2rem;
-  padding-bottom: 11.3rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
   box-sizing: border-box;
 }
 @media (max-width: 1800px) {
   .register-section {
-    padding-left: 14.1rem;
-    padding-right: 13.1rem;
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
   }
 }
 @media (max-width: 1400px) {
@@ -568,27 +591,21 @@ table {
 }
 @media (max-width: 992px) {
   .register-section {
-    padding-left: 9rem;
-    padding-right: 9rem;
-    padding-bottom: 5.3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 @media (max-width: 768px) {
   .register-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
   }
 }
 @media (max-width: 576px) {
   .register-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media (max-width: 320px) {
-  .register-section {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
   }
 }
 .register-section__orange-circle {
@@ -597,20 +614,21 @@ table {
   border-radius: 13.45rem 13.45rem 13.45rem 13.45rem;
   width: 13.45rem;
   height: 13.45rem;
-  margin-left: -10.35rem;
+  margin-left: -17.35rem;
   margin-top: -15.8rem;
 }
-@media (max-width: 1800px) {
+@media (max-width: 1400px) {
   .register-section__orange-circle {
     margin-left: -20rem;
+    margin-top: -15rem;
   }
 }
 @media (max-width: 1200px) {
   .register-section__orange-circle {
     width: 11.9rem;
     height: 11.9rem;
-    margin-left: -15.65rem;
-    margin-top: -15.65rem;
+    margin-left: -10.65rem;
+    margin-top: -13.65rem;
   }
 }
 @media (max-width: 992px) {
@@ -623,17 +641,21 @@ table {
     width: 6.3rem;
     height: 6.3rem;
     margin-left: -5.9rem;
-    margin-top: -12.2rem;
+    margin-top: -11.2rem;
   }
 }
 .register-section .register-services {
   display: flex;
   justify-content: space-around;
 }
+@media (max-width: 1800px) {
+  .register-section .register-services {
+    justify-content: center;
+  }
+}
 @media (max-width: 1400px) {
   .register-section .register-services {
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 .register-section .register-services .register {
@@ -642,8 +664,10 @@ table {
   height: 31.45rem;
   border-radius: 9%;
   display: flex;
+  justify-content: space-between;
   z-index: 100;
   box-sizing: border-box;
+  margin-left: 30px;
 }
 @media (max-width: 1800px) {
   .register-section .register-services .register {
@@ -662,6 +686,7 @@ table {
   .register-section .register-services .register {
     width: 16.9rem;
     height: 23.4rem;
+    margin-left: 0;
   }
 }
 .register-section .register-services .register__container {
@@ -875,39 +900,44 @@ table {
 .services-section {
   background-color: #FFFFFF;
   width: 100%;
-  padding: 7.5rem 18rem 8.8rem 18rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
   box-sizing: border-box;
+}
+@media (max-width: 1800px) {
+  .services-section {
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .services-section {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
 }
 @media (max-width: 1200px) {
   .services-section {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
   }
 }
 @media (max-width: 992px) {
   .services-section {
-    padding-left: 9rem;
-    padding-right: 9rem;
-    padding-bottom: 5.3rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 @media (max-width: 768px) {
   .services-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 2.3rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 7.5rem;
   }
 }
 @media (max-width: 576px) {
   .services-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media (max-width: 320px) {
-  .services-section {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding: 3.9rem 3rem 4.8rem 3rem;
+    justify-content: center;
   }
 }
 .services-section__block {
@@ -1275,7 +1305,7 @@ table {
   width: 0.85rem;
   height: 0.8rem;
   margin-right: 1.6rem;
-  margin-top: 0.95rem;
+  margin-top: 0.65rem;
   margin-bottom: 1.6rem;
 }
 .doubt-section .doubt__blue-arrow:active, .doubt-section .doubt__blue-arrow:hover {
@@ -1303,7 +1333,7 @@ table {
     line-height: 1.5rem;
   }
 }
-.doubt-section .boubt-subtitle {
+.doubt-section .doubt-section__subtitle {
   font-family: "Nunito", sans-serif;
   color: #3C4A53;
   font-weight: 400;
@@ -1313,7 +1343,7 @@ table {
   margin-top: 2.2rem;
 }
 @media (max-width: 576px) {
-  .doubt-section .boubt-subtitle {
+  .doubt-section .doubt-section__subtitle {
     font-size: 0.9rem;
     line-height: 1.2rem;
     margin-right: 0;
@@ -1431,11 +1461,14 @@ table {
   }
 }
 .doubt-section__buttons .doubt-button__tranparent {
-  width: 29.4rem;
+  width: 28.4rem;
   height: 4.4rem;
   border-radius: 1.25rem;
   border: solid 2px #0D5682;
-  background: #F4F9FF;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1200px) {
   .doubt-section__buttons .doubt-button__tranparent {
@@ -1483,7 +1516,7 @@ table {
   width: 34.5rem;
   height: 28.8rem;
   position: absolute;
-  top: 277rem;
+  top: 266rem;
   left: -21.9rem;
 }
 @media (max-width: 1400px) {
@@ -1500,14 +1533,38 @@ table {
   display: flex;
   justify-content: center;
 }
+@media (max-width: 1800px) {
+  .footer {
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  .footer {
+    padding-left: 15.5rem;
+    padding-right: 15.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .footer {
+    padding-left: 13rem;
+    padding-right: 13rem;
+  }
+}
+@media (max-width: 992px) {
+  .footer {
+    padding-left: 7rem;
+    padding-right: 7rem;
+  }
+}
 @media (max-width: 768px) {
   .footer {
-    padding: 4.1rem 17rem 1.7rem 17rem;
+    padding: 2.4rem 17rem 2.4rem 17rem;
   }
 }
 @media (max-width: 576px) {
   .footer {
-    padding: 4.1rem 3.4rem 1.7rem 3.4rem;
+    padding: 2.1rem 3.4rem 2.4em 3.4rem;
   }
 }
 .footer .footer-block {
@@ -1523,6 +1580,7 @@ table {
   .footer .footer-block__logo {
     width: 9.65rem;
     height: 3.2rem;
+    align-self: center;
   }
 }
 .footer .footer-block__copyright {

@@ -9,12 +9,32 @@
   display: flex;
   justify-content: center;
 
+  @include media-max-width($breakpoint-x-x-x-large){
+		padding-left: 20.5rem;
+		padding-right: 18.5rem; 
+	}
+
+	@include media-max-width($breakpoint-x-x-large){
+		padding-left: 15.5rem;
+		padding-right: 15.5rem; 
+	}
+
+  @include media-max-width($breakpoint-x-large){
+    padding-left: 13rem;
+    padding-right: 13rem; 
+  }
+
+  @include media-max-width($breakpoint-large){
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
+
   @include media-max-width($breakpoint-medium){
-    padding: 4.1rem 17rem 1.7rem 17rem;
+    padding: 2.4rem 17rem 2.4rem 17rem;
   }
 
   @include media-max-width($breakpoint-small){
-    padding: 4.1rem 3.4rem 1.7rem 3.4rem;
+    padding: 2.1rem 3.4rem 2.4em 3.4rem;
   }
 
   .footer-block {
@@ -30,6 +50,7 @@
       @include media-max-width($breakpoint-small){
         width: 9.65rem;
         height: 3.2rem;
+        align-self: center;
       }
     }
     

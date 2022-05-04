@@ -8,11 +8,36 @@
   background-color: map-get($colors , blue-turquoise);
   position: absolute;
   box-sizing: border-box;
-  padding-top: 6rem;
+  padding: 6rem 25rem 5.95rem 25rem;
 
-  @include media-max-width($breakpoint-small){
-    padding-top: 2rem;
+  @include media-max-width($breakpoint-x-x-x-large){
+		padding-left: 20.5rem;
+		padding-right: 18.5rem; 
+	}
+
+	@include media-max-width($breakpoint-x-x-large){
+		padding-left: 15.5rem;
+		padding-right: 15.5rem; 
+	}
+
+  @include media-max-width($breakpoint-x-large){
+    padding-left: 13rem;
+    padding-right: 13rem; 
   }
+
+  @include media-max-width($breakpoint-large){
+    padding-left: 7rem;
+    padding-right: 7rem; 
+  }
+
+	@include media-max-width($breakpoint-medium){
+    padding: 4rem 5.5rem 4rem 5.5rem;
+	}
+
+	@include media-max-width($breakpoint-small){
+    padding: 2.3rem 3rem 2.15rem 3rem;
+		justify-content: center;
+	}
   
   &__logo {
     width: 19rem;

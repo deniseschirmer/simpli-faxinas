@@ -1,15 +1,13 @@
 .info-section {
   background-color: #FFFFFF;
   width: 100%;
-  padding-left: 23.5rem;
-  padding-right: 23.5rem;
-  padding-top: 7.5rem;
+  padding: 7.5rem 25rem 6.6rem 25rem;
   box-sizing: border-box;
 }
 @media (max-width: 1800px) {
   .info-section {
-    padding-left: 16.1rem;
-    padding-right: 16.1rem;
+    padding-left: 20.5rem;
+    padding-right: 18.5rem;
   }
 }
 @media (max-width: 1400px) {
@@ -26,27 +24,21 @@
 }
 @media (max-width: 992px) {
   .info-section {
-    padding-left: 9rem;
-    padding-right: 9rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 @media (max-width: 768px) {
   .info-section {
-    padding-left: 6rem;
-    padding-right: 6rem;
-    padding-top: 2.3rem;
+    padding-left: 5.5rem;
+    padding-right: 5.5rem;
+    padding-top: 7.5rem;
   }
 }
 @media (max-width: 576px) {
   .info-section {
-    padding-left: 4rem;
-    padding-right: 4rem;
-  }
-}
-@media (max-width: 320px) {
-  .info-section {
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    padding: 3.9rem 3rem 4.8rem 3rem;
+    justify-content: center;
   }
 }
 .info-section .info-text {
